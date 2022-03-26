@@ -4,7 +4,7 @@
     echo('
     <nav class="navbar navbar-expand-lg navbar-light azul-cultural">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="../images/logo-2-branco.png" width="100px"></a>
+            <a class="navbar-brand" href="#"><img src="images/logo-2-branco.png" width="100px"></a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item ">
                     <a class="nav-link text-light active" href="#">MÚSICAS</a>
