@@ -1,34 +1,13 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php
+    include 'header.php';
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    
-    <title>Toque Cultural</title>
-  </head>
-  <style>
-    .azul-cultural{
-        background-color: #005790;
-    }
-    .nav-link{
-        font-size: 25px;
-        font-weight: 300;    
-    }
-    .active{
-        font-weight: 600 !important;
-    }
-  </style>
-  <body>
+    echo('
     <nav class="navbar navbar-expand-lg navbar-light azul-cultural">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="images/logo-2-branco.png" width="100px"></a>
+            <a class="navbar-brand" href="#"><img src="../images/logo-2-branco.png" width="100px"></a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item ">
-                <a class="nav-link text-light active" href="#">MÚSICAS</a>
+                    <a class="nav-link text-light active" href="#">MÚSICAS</a>
                 </li>
                 <!-- Aparace para ADM
                 <li class="nav-item">
@@ -58,5 +37,5 @@
             </ul>
         </div>
       </nav>
-  </body>
-</html>
+      ');
+?>
