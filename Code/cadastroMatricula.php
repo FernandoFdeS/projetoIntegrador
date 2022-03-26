@@ -1,36 +1,7 @@
 <?php
     include 'layouts/navbar.php';
 ?>
-<style>
-    .btn-principal{
-        background-color: #005790;
-        color:white;
-        padding: 5px 25px;
-        font-weight: 600;
-        font-size:20px;
-        border:none;
-        border-radius:5px;
-    }
-    .btn-principal:hover{
-        background-color: #004a7c;
-    }
-    .btn-secundario{
-        box-sizing: border-box;
-        background-color: white;
-        color:  #005790;
-        text-decoration:none;
-        padding: 5px 25px;
-        font-weight: 600;
-        font-size:20px;
-        border: solid 2px  #005790;
-        border-radius:5px;
-        cursor: pointer;
-    }
-    .btn-secundario:hover{
-        background-color: #e8e8e8;
-        color:  #005790;
-    }
-</style>
+
 <div class="container">
     <div class="row mt-5">
         <h1 class="mt-1">Cadastro Matricula</h1>
