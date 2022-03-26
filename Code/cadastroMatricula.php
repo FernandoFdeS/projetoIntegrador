@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="row mt-5">
-        <h1 class="mt-1">Cadastro Matricula</h1>
+        <h1 class="mt-1">Cadastro de Matrícula</h1>
         <form class="mt-5" action="#" method="#">
             <div class="form-group mt-3">
                 <label for="aluno">Aluno: </label>
