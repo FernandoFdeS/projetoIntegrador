@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="row mt-5">
-        <h1 class="mt-1">Inserir Música</h1>
+        <h1 class="mt-1 display-3">Inserir Música</h1>
         <form class="mt-5" action="#" method="#">
 
             <div class="row mt-3">
