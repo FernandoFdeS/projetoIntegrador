@@ -10,12 +10,12 @@
             <div class="row mt-3">
                 <div class="col-6">
                     <label for="musica">Título da Música: </label>
-                    <input type="text" class="form-control" id="musica" name="musica">
+                    <input type="text" class="form-control" id="musica" name="musica" required>
                 </div>
 
                 <div class="col-6">
                     <label for="artista">Artista: </label>
-                    <input type="text" class="form-control" id="artista" name="artista">
+                    <input type="text" class="form-control" id="artista" name="artista" required>
                 </div>
             </div>
 
@@ -46,13 +46,13 @@
             <div class="row mt-3">
                 <div class="col-6">
                     <label for="link">Link: </label>
-                    <input type="text" class="form-control" id="link" name="link">
+                    <input type="text" class="form-control" id="link" name="link" placeholder="Opcional">
                 </div>            
 
                 <div class="col-6">
                     <label for="instrumento">Instrumento: </label>
                     <select class="form-select" aria-label="Default select example" name="instrumento" id="instrumento">
-                        <option selected disabled>Selecione um instrumento</option>
+                        <option value="" selected disabled>Selecione um instrumento</option>
                         <option value="1">Violão 🎸</option>
                         <option value="2">Voz 🎙️</option>
                         <option value="3">Teclado 🎹</option>
@@ -62,14 +62,13 @@
 
             <div class="form-group mt-3">
                 <label for="anotacoes">Anotações: </label>
-                <textarea class="form-control" id="anotacoes" name="anotacoes"></textarea>
+                <textarea class="form-control" id="anotacoes" name="anotacoes" placeholder="Opcional"></textarea>
             </div>
 
             <div class="form-group mt-3">
                 <label for="status">Status: </label>
                     <select class="form-select" aria-label="Default select example" name="status" id="status">
-                        <option selected disabled>Selecione um status</option>
-                        <option value="1">Aprendendo</option>
+                        <option value="1" selected>Aprendendo</option>
                         <option value="2">Completo</option>
                         <option value="3">Em espera</option>
                         <option value="4">Planejando aprender</option>

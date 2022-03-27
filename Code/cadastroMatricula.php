@@ -8,8 +8,8 @@
         <form class="mt-5" action="#" method="#">
             <div class="form-group mt-3">
                 <label for="aluno">Aluno: </label>
-                <select class="form-select" aria-label="Default select example" name="aluno" id="aluno">
-                    <option selected disabled>Selecione um aluno</option>
+                <select class="form-select" aria-label="Default select example" name="aluno" id="aluno" required>
+                    <option value="" selected disabled>Selecione um aluno</option>
                     <option value="1">Aluno 1</option>
                     <option value="2">Aluno 2</option>
                     <option value="3">Aluno 3</option>
@@ -17,7 +17,7 @@
             </div>
             <div class="form-group mt-2">
                 <label for="curso">Curso: </label>
-                <select class="form-select" aria-label="Default select example" name="curso" id="curso">
+                <select class="form-select" aria-label="Default select example" name="curso" id="curso" required>
                     <option selected disabled>Selecione um curso</option>
                     <option value="1">Curso 1</option>
                     <option value="2">Curso 2</option>
