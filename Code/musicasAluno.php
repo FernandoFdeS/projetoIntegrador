@@ -11,6 +11,7 @@
     .anotacoes{
         width:100%;
         resize:none;
+        border-radius:5px;
     }
     .verde{
         background-color:#2cd459;
@@ -25,7 +26,7 @@
 
 <div class="container">
     <div class="row mt-5">
-        <h1 class="mt-1 mb-3">Nome do Aluno</h1>
+        <h1 class="mt-1 mb-3 display-3">Nome do Aluno</h1>
         <span class="btn-principal col-md-4 col-sm-12 mx-1 text-center mb-5">
             <a>Adicionar Música +</a>
         </span>
@@ -66,7 +67,7 @@
                             <img src="images/none-icon.png" width="50px">
                         </td>
                         <td colspan="2">
-                            <textarea class="anotacoes" id="note-1" placeholder="Anotações" onblur="quickNoteUpdate(1)"></textarea>
+                            <textarea class="anotacoes" id="note-1" placeholder="..." onblur="quickNoteUpdate(1)"></textarea>
                         </td>                         
                         <td colspan="2">
                             <select class="form-select" id="select-1" onchange="changeColor(1)">

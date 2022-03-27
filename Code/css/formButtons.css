@@ -44,3 +44,37 @@
     background-color: #0185dd;
     border: solid 2px  #0499FA;
 }
+
+.card{
+    background-color:#F8F8F8;
+    border: 4px solid #E4E4E4;
+    border-radius: 5px;
+}
+.btn-editar{
+    background-color:#759CFF;
+    border: 5px solid #5E82DF;
+    color:white;
+    border-radius:8px;
+    width:60px;
+    height:60px;
+    cursor: pointer;
+}
+.btn-editar:hover{
+    background-color:#6185E2;
+    border: 5px solid #5E82DF;
+    cursor: pointer;
+}
+.btn-remover{
+    background-color:#FF7575;
+    border: 5px solid #E55E5E;
+    color:white;
+    border-radius:8px;
+    width:60px;
+    height:60px;
+    cursor: pointer;
+}
+.btn-remover:hover{
+    background-color:#E55E5E;
+    border: 5px solid #E55E5E;
+    cursor: pointer;
+}
