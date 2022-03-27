@@ -17,8 +17,11 @@
             </div>
 
             <div class="form-group mt-3">
-                <label for="link">Link para vídeos e fotos: </label>
-                <input type="text" class="form-control" id="link" name="link" placeholder="Opcional">
+                <label for="link" class="d-flex justify-content-between">
+                    <span>Link para fotos e vídeos:</span>
+                    <span class="text-muted display-3" style="font-size:15px;">Opcional</span>
+                </label>
+                <input type="text" class="form-control" id="link" name="link">
             </div>            
 
             <div class=" mt-5">
