@@ -6,6 +6,7 @@
     font-size:20px;
     border:none;
     border-radius:5px;
+    cursor: pointer;
 }
 .btn-principal:hover{
     background-color: #004a7c;
@@ -25,4 +26,21 @@
 .btn-secundario:hover{
     background-color: #e8e8e8;
     color:  #005790;
+}
+.btn-terciario{
+    box-sizing: border-box;
+    background-color: #0499FA;
+    color:  white;
+    text-decoration:none;
+    padding: 5px 25px;
+    font-weight: 600;
+    font-size:20px;
+    border: solid 2px  #0499FA;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+.btn-terciario:hover{
+    background-color: #0185dd;
+    border: solid 2px  #0499FA;
 }

@@ -47,16 +47,15 @@
                 </select>
             </div>
 
-            <label class="btn-secundario mt-3">
-                    <a >Adicionar mais um aluno à aula</a>
+            <label class="btn-terciario mt-3 col-12 text-center">
+                <a>Adicionar mais um aluno à aula</a>
             </label>
 
             <div class=" mt-5 mb-5">
                 <button type="submit" class="btn-principal">Cadastrar</button>
                 <span class="btn-secundario mx-1">
                     <a >Voltar</a>
-                </span>
-               
+                </span>               
             </div>
         </form>
     </div>
