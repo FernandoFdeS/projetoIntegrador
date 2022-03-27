@@ -1,5 +1,5 @@
 <?php
-    include 'layouts/navbar.php';
+    include '../../layouts/navbar.php';
 ?>
 
 <div class="container">
@@ -62,7 +62,7 @@
 
             <div class="form-group mt-3">
                 <label for="anotacoes">Anotações: </label>
-                <textarea class="form-control" id="anotacoes" name="anotacoes" placeholder="Opcional"></textarea>
+                <textarea class="form-control" id="anotacoes" name="anotacoes" placeholder="Opcional" style="resize:none;"></textarea>
             </div>
 
             <div class="form-group mt-3">

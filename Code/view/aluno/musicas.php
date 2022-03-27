@@ -1,6 +1,7 @@
 <?php
-    include 'layouts/navbar.php';
+    include '../../layouts/navbar.php';
 ?>
+
 <style>
     .status-badge{
         position: absolute;
@@ -21,6 +22,9 @@
     }
     .azul{
         background-color:#446ffc;
+    }
+    .cinza{
+        background-color: grey;
     }
 </style>
 
@@ -55,16 +59,16 @@
                             </div>
                         </td>
                         <td colspan="1" class="text-center px-0">
-                            <img src="images/cifra-icon.png" width="50px">
+                            <img src="../../images/cifra-icon.png" width="50px">
                         </td>
                         <td colspan="1" class="text-center px-0">
-                            <img src="images/none-icon.png" width="50px">
+                            <img src="../../images/none-icon.png" width="50px">
                         </td>
                         <td colspan="1" class="text-center px-0">
-                            <img src="images/none-icon.png" width="50px">
+                            <img src="../../images/none-icon.png" width="50px">
                         </td>
                         <td colspan="1" class="text-center px-0">
-                            <img src="images/none-icon.png" width="50px">
+                            <img src="../../images/none-icon.png" width="50px">
                         </td>
                         <td colspan="2">
                             <textarea class="anotacoes" id="note-1" placeholder="..." onblur="quickNoteUpdate(1)"></textarea>
@@ -74,6 +78,7 @@
                                 <option value="1">Aprendendo</option>
                                 <option value="2">Completo</option>
                                 <option value="3">Em espera</option>
+                                <option value="4">Planejando aprender</option>
                             <select>
                         </td>                        
                     <tr>                                             
@@ -90,12 +95,15 @@
         badge.classList.remove("azul");
         badge.classList.remove("verde");
         badge.classList.remove("amarelo");
+        badge.classList.remove("cinza");
         if(option==1){
             badge.classList.add("verde");
         }else if(option==2){
             badge.classList.add("azul");
         }else if(option==3){
             badge.classList.add("amarelo");
+        } else if(option==4){
+            badge.classList.add("cinza");
         }        
     } 
     //OBS: futuramente tambem sera responsavel for atualizar no banco quando o select for alterado (usando ajax e etc)

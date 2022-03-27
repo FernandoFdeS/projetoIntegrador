@@ -4,7 +4,7 @@
     echo('
     <nav class="navbar navbar-expand-lg navbar-light azul-cultural">
         <div class="container d-flex flex-md-row flex-sm-column">
-            <a class="navbar-brand" href="#"><img src="images/logo-2-branco.png" width="100px"></a>
+            <a class="navbar-brand" href="#"><img src="../../images/logo-2-branco.png" width="100px"></a>
             <div class="justify-content-md-right justify-content-sm-center">
                 <button class="navbar-toggler text-white" type="btn-secundario" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

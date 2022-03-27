@@ -1,5 +1,5 @@
 <?php
-    include 'layouts/navbar.php';
+    include '../../layouts/navbar.php';
 ?>
 <div class="container">
     <div class="row mt-5">

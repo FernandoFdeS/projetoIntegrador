@@ -1,5 +1,5 @@
 <?php
-    include 'layouts/navbar.php';
+    include '../../layouts/navbar.php';
 ?>
     
 <div class="container">
@@ -17,10 +17,10 @@
             <!-- Div abaixo ficara visivel apenas para administradores -->
             <div class="d-flex align-items-center">
                 <button class="btn-editar mx-2">
-                    <img src="images/edit-icon.png" width=40px>
+                    <img src="../../images/edit-icon.png" width=40px>
                 </button>
                 <button class="btn-remover">
-                    <img src="images/delete-icon.png" width=40px>
+                    <img src="../../images/delete-icon.png" width=40px>
                 </button>
             </div>
         </div>

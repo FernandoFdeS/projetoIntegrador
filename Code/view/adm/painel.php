@@ -1,5 +1,5 @@
 <?php
-    include 'layouts/navbar.php';
+    include '../../layouts/navbar.php';
 ?>
 
 <style>
@@ -24,37 +24,37 @@
         <div class="row">
             <div class="col-3 card-painel d-flex flex-row justify-content-between">
                 <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow">
-                    <img src="images/alunos-icon.png" width=75px>
+                    <img src="../../images/alunos-icon.png" width=75px>
                     <p class="m-0 display-6">Alunos</p>
                 </div>            
             </div>  
             <div class="col-3 card-painel d-flex flex-row justify-content-between">
                 <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow">
-                    <img src="images/professores-icon.png" width=100px>
+                    <img src="../../images/professores-icon.png" width=100px>
                     <p class="m-0 display-6">Professores</p>
                 </div>            
             </div> 
              <div class="col-3 card-painel d-flex flex-row justify-content-between">
                 <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow">
-                    <img src="images/cursos-icon.png" width=125px>
+                    <img src="../../images/cursos-icon.png" width=125px>
                     <p class="m-0 display-6">Cursos</p>
                 </div>            
             </div>  
             <div class="col-3 card-painel d-flex flex-row justify-content-between ">
                 <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow" onclick="funcaoIndisponivel()">
-                    <img src="images/pagamentos-icon.png" width=75px>
+                    <img src="../../images/pagamentos-icon.png" width=75px>
                     <p class="m-0 display-6">Pagamentos</p>
                 </div>            
             </div>  
             <div class="col-3 card-painel d-flex flex-row justify-content-between mt-4">
                 <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow">
-                    <img src="images/matriculas-icon.png" width=75px>
+                    <img src="../../images/matriculas-icon.png" width=75px>
                     <p class="m-0 display-6">Matriculas</p>
                 </div>            
             </div>  
             <div class="col-3 card-painel d-flex flex-row justify-content-between mt-4">
                 <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow">
-                    <img src="images/adm-icon.png" width=75px>
+                    <img src="../../images/adm-icon.png" width=75px>
                     <p class="m-0 display-6">Administradores</p>
                 </div>            
             </div>    
