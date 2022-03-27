@@ -7,7 +7,7 @@
         <h1 class="mt-1 display-3">Alunos</h1>
         <!-- Span abaixo ficara visivel apenas para administradores -->
         <span class="btn-principal col-md-4 col-sm-12 mx-1 text-center mb-5">
-            <a>Adicionar Música +</a>
+            <a href="../musica/cadastro.php">Adicionar Música +</a>
         </span>
         <div class="col-12 card d-flex flex-row justify-content-between">
             <div class="d-flex flex-column">

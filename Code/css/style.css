@@ -1,3 +1,10 @@
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:white;
+}
 .btn-principal{
     background-color: #005790;
     color:white;
@@ -7,12 +14,14 @@
     border:none;
     border-radius:5px;
     cursor: pointer;
+    text-decoration: none;
 }
 .btn-principal:hover{
     background-color: #004a7c;
 }
 .btn-secundario{
     box-sizing: border-box;
+    text-decoration: none;
     background-color: white;
     color:  #005790;
     text-decoration:none;
@@ -29,6 +38,7 @@
 }
 .btn-terciario{
     box-sizing: border-box;
+    text-decoration: none;
     background-color: #0499FA;
     color:  white;
     text-decoration:none;
