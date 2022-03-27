@@ -75,9 +75,17 @@ create table recital(
     ano varchar(20) not null,
     localizacao varchar(100) not null,
     link text,
-    id_aluno integer not null,
     constraint pk_recital primary key(id),
-    constraint fk_recital_aluno foreign key (id_aluno) references aluno(id)
+);
+
+create table aluno_recital(
+    id SERIAL,
+    data_apresentacao date not null;
+    ordem smallint not null;
+    id_recital integer not null;
+    id_aluno integer not null;
+    constraint fk_aluno_recital_aluno foreign key (id_aluno) references aluno(id);
+    constraint fk_aluno_recital_recital foreign key (id_recital) references recital(id)
 );
 
 create table horario(
