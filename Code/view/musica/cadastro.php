@@ -32,17 +32,17 @@
 
             <div class="row mt-3">
                 <div class="col-6">
-                    <label for="musica">Título da Música: </label>
-                    <input type="text" class="form-control" id="musica" name="musica" required>
+                    <label for="musica">Título: </label>
+                    <input type="text" class="form-control" id="musica" name="musica" placeholder="Título da Música" required>
                 </div>
 
                 <div class="col-6">
                     <label for="artista">Artista: </label>
-                    <input type="text" class="form-control" id="artista" name="artista" required>
+                    <input type="text" class="form-control" id="artista" name="artista" placeholder="Nome do Artista" required>
                 </div>
             </div>
-            
-            <div class="row mt-1">
+
+            <div class="row mt-3">
                 <div class="col-6">
                     <label for="cifra" class="d-flex justify-content-between">
                         <span>Cifra:</span>
@@ -68,7 +68,7 @@
                         <span>Link:</span>
                         <span class="text-muted display-3" style="font-size:15px;">Opcional</span>
                     </label>
-                    <input type="text" class="form-control" id="link" name="link">
+                    <input type="text" class="form-control" id="link" name="link" placeholder="Link para a música">
                 </div>            
 
                 <div class="col-6">
@@ -87,7 +87,7 @@
                     <span>Anotações:</span>
                     <span class="text-muted display-3" style="font-size:15px;">Opcional</span>
                 </label>
-                <textarea class="form-control" id="anotacoes" name="anotacoes" placeholder="..." style="resize:none;"></textarea>
+                <textarea class="form-control" id="anotacoes" name="anotacoes" placeholder="Anotações sobre a música" style="resize:none;"></textarea>
             </div>
 
             <div class="form-group mt-3">

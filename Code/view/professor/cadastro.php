@@ -33,11 +33,11 @@
             </div>
 
             <div class="form-group mt-3">
-            <label for="cpf" class="d-flex justify-content-between">
+                <label for="cpf" class="d-flex justify-content-between">
                    <span>CPF:</span>
                    <span class="text-muted display-3" style="font-size:15px;">Apenas números</span>
                 </label>
-                <input type="text" class="form-control" id="cpf" name="cpf" minlength="11" maxlength="11" required placeholder="XXXXXXXXXXX">
+                <input type="text" class="form-control" id="cpf" name="cpf" minlength="11" maxlength="11" required placeholder="00000000000">
             </div>
 
             <div class="form-group mt-3">

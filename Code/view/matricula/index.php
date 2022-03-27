@@ -4,10 +4,10 @@
     
 <div class="container">
     <div class="row mt-5">
-        <h1 class="mt-1 display-3">Matriculas</h1>
+        <h1 class="mt-1 display-3">Matrículas</h1>
         <!-- Span abaixo ficara visivel apenas para administradores -->
         <span class="btn-principal col-md-4 col-sm-12 mx-1 text-center mb-5">
-            <a>Adicionar Matricula +</a>
+            <a>Adicionar Matrícula +</a>
         </span>
         <div class="col-12 card d-flex flex-row justify-content-between">
             <div class="d-flex flex-column">

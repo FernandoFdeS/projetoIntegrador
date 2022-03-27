@@ -28,12 +28,11 @@
                 <label class="form-check-label" for="data">Data: </label>
                 <input type="date" class="form-control" id="data" name="data">                
             </div>
-            <div class=" mt-5">
+            <div class=" mt-5 mb-3">
                 <button type="submit" class="btn-principal">Cadastrar</button>
                 <span class="btn-secundario mx-1">
                     <a >Voltar</a>
                 </span>
-               
             </div>
         </form>
     </div>

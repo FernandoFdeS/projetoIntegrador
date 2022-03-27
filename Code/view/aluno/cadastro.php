@@ -14,9 +14,9 @@
             <div class="form-group mt-3">
             <label for="cpf" class="d-flex justify-content-between">
                    <span>CPF:</span>
-                   <span class="text-muted display-3" style="font-size:15px;">XXX.XXX.XXX-XX</span>
+                   <span class="text-muted display-3" style="font-size:15px;">Apenas números</span>
                 </label>
-                <input type="text" class="form-control" id="cpf" name="cpf" required placeholder="XXX.XXX.XXX-XX">
+                <input type="text" class="form-control" id="cpf" name="cpf" minlength="11" maxlength="11" required placeholder="00000000000">
             </div>
 
             <div class="form-group mt-3">
@@ -32,12 +32,12 @@
                    <span>Responsável:</span>
                    <span class="text-muted display-3" style="font-size:15px;">Opcional</span>
                 </label>
-                <input type="text" class="form-control" id="responsavel" name="responsavel" placeholder="...">
+                <input type="text" class="form-control" id="responsavel" name="responsavel" placeholder="Nome do Responsável">
             </div>
 
             <div class="form-group mt-3">
                 <label for="email">E-mail:</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="...">
+                <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@email.com">
             </div>
 
             <div class="form-group mt-3">
@@ -55,3 +55,16 @@
         </form>
     </div>
 </div>
+
+<script>
+    var chars = "0123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNOPQRSTUVWXYZ";
+    var password = "";
+
+    for (var i = 0; i <= 8; i++) {
+        var randomNumber = Math.floor(Math.random() * chars.length);
+        password += chars.substring(randomNumber, randomNumber +1);
+    }
+
+    document.getElementById("senha").value = password
+
+</script>

@@ -24,7 +24,7 @@
                 <input type="text" class="form-control" id="link" name="link">
             </div>            
 
-            <div class=" mt-5">
+            <div class=" mt-5 mb-2">
                 <button type="submit" class="btn-principal">Cadastrar</button>
                 <span class="btn-secundario mx-1">
                     <a >Voltar</a>

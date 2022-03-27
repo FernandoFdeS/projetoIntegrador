@@ -8,7 +8,7 @@
         <form class="mt-5" action="#" method="#">
             <div class="form-group mt-3">
                 <label for="email">Email: </label>
-                <input type="email" class="form-control" id="email" name="email" required placeholder="Email do ADM">
+                <input type="email" class="form-control" id="email" name="email" required placeholder="exemplo@email.com">
             </div>
             <div class="form-group mt-3">
                 <label for="senha">Senha: </label>
