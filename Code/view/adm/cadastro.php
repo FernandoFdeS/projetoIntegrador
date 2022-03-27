@@ -12,7 +12,7 @@
             </div>
             <div class="form-group mt-3">
                 <label for="senha">Senha: </label>
-                <input type="text" class="form-control" id="senha" name="senha" required placeholder="Senha do Aluno">
+                <input type="text" class="form-control" id="senha" name="senha" required placeholder="Senha do ADM">
             </div>
             <div class=" mt-5 mb-5">
                 <button type="submit" class="btn-principal">Cadastrar</button>

@@ -2,6 +2,29 @@
     include '../../layouts/navbar.php';
 ?>
 
+<style>
+      input[type="file"]{
+            margin: 0px;
+            padding: 0px;
+            display: none;
+        }
+        .btn-file{
+            background-color: #59acff;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-weight: lighter;
+            width: auto;
+            display: block;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+        .btn-file:hover{
+            background-color: #0275d8;
+        }
+</style>
+
 <div class="container">
     <div class="row mt-5">
         <h1 class="mt-1 display-3">Inserir Música</h1>
@@ -18,35 +41,34 @@
                     <input type="text" class="form-control" id="artista" name="artista" required>
                 </div>
             </div>
-
-            <div class="row mt-3">
-                <div class="col-6">
-                    <label for="cifra">Cifra: </label>
-                </div>
-
-                <div class="col-6">
-                    <label for="arquivo">Arquivo: </label>
-                </div>
-            </div>
-
+            
             <div class="row mt-1">
                 <div class="col-6">
-                    <label class="btn-secundario" for="cifra">   <!-- placeholder até achar um jeito melhor -->
-                        Enviar Cifra <input type="file" id="cifra" name="cifra" hidden>
-                    </label>
+                    <label for="cifra" class="d-flex justify-content-between">
+                        <span>Cifra:</span>
+                        <span class="text-muted display-3" style="font-size:15px;">Opcional</span>
+                    </label>                       <!-- placeholder até achar um jeito melhor -->
+                    <label for="cifra" id="btnCifra" class="btn-file">Escolha a cifra</label>
+                    <input type="file" class="" id="cifra" placeholder="Insira a cifra:" name="cifra" onChange="changeCifraLabel()">                   
                 </div>
 
                 <div class="col-6">
-                    <label class="btn-secundario" for="arquivo">
-                        Enviar Arquivo <input type="file" id="arquivo" name="arquivo" hidden>
-                    </label>
+                    <label for="arquivo" class="d-flex justify-content-between">
+                        <span>Arquivo:</span>
+                        <span class="text-muted display-3" style="font-size:15px;">Opcional</span>
+                    </label>                       <!-- placeholder até achar um jeito melhor -->
+                    <label for="arquivo" id="btnFile" class="btn-file">Escolha o arquivo</label>
+                    <input type="file" class="" id="arquivo" placeholder="Insira o arquivo:" name="arquivo" onChange="changeArquivoLabel()">                   
                 </div>
             </div>
           
             <div class="row mt-3">
                 <div class="col-6">
-                    <label for="link">Link: </label>
-                    <input type="text" class="form-control" id="link" name="link" placeholder="Opcional">
+                    <label for="link" class="d-flex justify-content-between">
+                        <span>Link:</span>
+                        <span class="text-muted display-3" style="font-size:15px;">Opcional</span>
+                    </label>
+                    <input type="text" class="form-control" id="link" name="link">
                 </div>            
 
                 <div class="col-6">
@@ -61,8 +83,11 @@
             </div>
 
             <div class="form-group mt-3">
-                <label for="anotacoes">Anotações: </label>
-                <textarea class="form-control" id="anotacoes" name="anotacoes" placeholder="Opcional" style="resize:none;"></textarea>
+                <label for="anotacoes" class="d-flex justify-content-between">
+                    <span>Anotações:</span>
+                    <span class="text-muted display-3" style="font-size:15px;">Opcional</span>
+                </label>
+                <textarea class="form-control" id="anotacoes" name="anotacoes" placeholder="..." style="resize:none;"></textarea>
             </div>
 
             <div class="form-group mt-3">
@@ -85,3 +110,28 @@
         </form>
     </div>
 </div>
+<script >
+    function changeCifraLabel(){
+        cifra = document.getElementById('cifra').files.length;
+        console.log(cifra);
+        if(cifra>0){
+            document.getElementById('btnCifra').innerHTML='Cifra escolhida com sucesso';
+            document.getElementById('btnCifra').style.backgroundColor='#0275d8';
+        }else{
+            document.getElementById('btnCifra').innerHTML='Escolha a cifra:';
+            document.getElementById('btnCifra').style.backgroundColor='#59acff';
+        }
+    }
+
+    function changeArquivoLabel(){
+        cifra = document.getElementById('arquivo').files.length;
+        console.log(cifra);
+        if(cifra>0){
+            document.getElementById('btnFile').innerHTML='Arquivo escolhido com sucesso';
+            document.getElementById('btnFile').style.backgroundColor='#0275d8';
+        }else{
+            document.getElementById('btnFile').innerHTML='Escolha a cifra:';
+            document.getElementById('btnFile').style.backgroundColor='#59acff';
+        }
+    }
+</script>
