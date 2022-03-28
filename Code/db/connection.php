@@ -7,7 +7,7 @@
 // Se estivéssemos usando um banco de dados MySQL, por exemplo, o caminho seria:
 //       $db_path = 'mysql:host=localhost;dbname=nomedobanco';
 // Veja mais informações em: https://www.php.net/manual/pt_BR/book.pdo.php
-$arquivo = 'database.sqlite';
+$arquivo = $_SERVER['DOCUMENT_ROOT'].'/Code/db/database.sqlite';
 
 // Essa será a variável que qualquer página poderá utilizar
 // para acessar o banco de dados depois de incluir `db.php`
