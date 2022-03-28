@@ -1,5 +1,6 @@
 <?php
     include '../../layouts/navbar.php';
+    include '../../controller/aluno/musicas.php';
 ?>
 
 <style>
@@ -30,7 +31,9 @@
 
 <div class="container">
     <div class="row mt-5">
-        <h1 class="mt-1 mb-3 display-3">Nome do Aluno</h1>
+        <h1 class="mt-1 mb-3 display-3">
+            <?php echo ($aluno['nome']) ?>
+        </h1>
         <span class="btn-principal col-md-4 col-sm-12 mx-1 text-center mb-5">
             <a>Adicionar Música +</a>
         </span>
@@ -116,4 +119,10 @@
         alert("Anotações salvas!");
         alert("kkkkmentira");
     }
+    document.getElementById("nav-musica").classList.add("active");
+    document.getElementById("nav-painel").classList.remove("active");    
+    document.getElementById("nav-aulas").classList.remove("active");
+    document.getElementById("nav-perfil").classList.remove("active");
+    document.getElementById("nav-recitais").classList.remove("active");    
+
 </script>

@@ -1,3 +1,6 @@
+<?php
+  include '../controller/login/login.php';
+?>
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -30,16 +33,16 @@
     <div class="row  d-flex justify-content-center">
         <div class="col-md-6 col-sm-12" style="position: absolute;top: 40%;transform: translateY(-50%);">
             <div class=" text-center">
-                <img src="images/logo-1-azul.png" height="280 px">
+                <img src="../images/logo-1-azul.png" height="280 px">
             </div>
-            <form class="col-12 formulario shadow azul-cultural">
+            <form class="col-12 formulario shadow azul-cultural" action="index.php" method="POST">
                 <div class="mb-3">
                     <label for="email" class="form-label text-white">Login</label>
-                    <input type="email" class="form-control p-2" id="email" aria-describedby="emailHelp" style="font-size: 16px;">                    
+                    <input type="text" class="form-control p-2" name="email" id="email" aria-describedby="emailHelp" style="font-size: 16px;">                    
                 </div>
                 <div class="mb-3">
                     <label for="senha" class="form-label text-white">Senha</label>
-                    <input type="password" class="form-control p-2" id="senha"  style="font-size: 16px;">
+                    <input type="password" class="form-control p-2" id="senha" name="senha"  style="font-size: 16px;">
                 </div>                
                 <button type="submit" class="btn btn-light col-12 p-2" style="font-weight: bold;color: #005790; font-size: 22px;">LOGIN</button>
             </form>

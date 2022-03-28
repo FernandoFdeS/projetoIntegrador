@@ -59,12 +59,17 @@
                 </div>            
             </div>    
         </div>    
-   
-
     </div>
 </div>
 <script>
     function funcaoIndisponivel(){
         alert("Função indisponível no momento");
-    }
+    }    
+    
+    document.getElementById("nav-painel").classList.add("active");
+    document.getElementById("nav-musica").classList.remove("active");
+    document.getElementById("nav-aulas").classList.remove("active");
+    document.getElementById("nav-perfil").classList.remove("active");
+    document.getElementById("nav-recitais").classList.remove("active");
+    
 </script>

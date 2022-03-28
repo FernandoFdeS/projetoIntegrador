@@ -1,5 +1,6 @@
 <?php
     include '../../layouts/navbar.php';
+    include '../../controller/aluno/index.php';
 ?>
     
 <div class="container">

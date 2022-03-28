@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    require '../../db/connection.php';
     echo'   <!doctype html>
     <html lang="pt-br">
       <head>

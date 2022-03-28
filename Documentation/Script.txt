@@ -1,5 +1,5 @@
 create table aluno(
-    id SERIAL,
+    id INTEGER PRIMARY KEY,
     cpf varchar(11) not null,
     nome varchar(100) not null,
     data_nasc date not null,
@@ -11,7 +11,7 @@ create table aluno(
 );
 
 create table professor(
-    id SERIAL,
+    id INTEGER PRIMARY KEY,
     cpf varchar(11) not null,
     nome varchar(100) not null,
     senha varchar(100) not null,
@@ -21,14 +21,14 @@ create table professor(
 );
 
 create table administrador(
-    id SERIAL,
+    id INTEGER PRIMARY KEY,
     senha varchar(100) not null,
     email varchar(100) not null,
     constraint pk_administrador primary key (id)
 );
 
 create table curso(
-    id SERIAL,
+    id INTEGER PRIMARY KEY,
     nome varchar(100) not null,
     id_professor integer not null,
     constraint pk_curso primary key(id),
@@ -36,7 +36,7 @@ create table curso(
 );
 
 create table matricula(
-    id SERIAL,
+    id INTEGER PRIMARY KEY,
     id_aluno integer not null,
     id_curso integer not null,
     constraint pk_matricula primary key(id),
@@ -45,7 +45,7 @@ create table matricula(
 );
 
 create table pagamento(
-    id SERIAL,
+    id INTEGER PRIMARY KEY,
     mes integer not null,
     data_vencimento date not null,
     data_pagamento date not null,
@@ -56,7 +56,7 @@ create table pagamento(
 );
 
 create table musica(
-    id SERIAL,
+    id INTEGER PRIMARY KEY,
     nome varchar(100) not null,
     artista varchar(100) not null,
     anotacoes varchar(300) not null,
@@ -71,7 +71,7 @@ create table musica(
 );
 
 create table recital(
-    id SERIAL,
+    id INTEGER PRIMARY KEY,
     ano varchar(20) not null,
     localizacao varchar(100) not null,
     link text,
@@ -79,7 +79,7 @@ create table recital(
 );
 
 create table aluno_recital(
-    id SERIAL,
+    id INTEGER PRIMARY KEY,
     data_apresentacao date not null;
     ordem smallint not null;
     id_recital integer not null;
@@ -89,14 +89,14 @@ create table aluno_recital(
 );
 
 create table horario(
-    id SERIAL,
+    id INTEGER PRIMARY KEY,
     dia smallint not null,
     horario smallint not null,
     constraint pk_horario primary key(id)
 );
 
 create table professor_horario(
-    id SERIAL,
+    id INTEGER PRIMARY KEY,
     id_horario integer not null,
     id_professor integer not null,
     constraint pk_professor_horario primary key(id),
@@ -105,7 +105,7 @@ create table professor_horario(
 );
 
 create table aula(
-    id SERIAL,
+    id INTEGER PRIMARY KEY,
     id_curso integer not null,
     id_horario integer not null, 
     constraint pk_aula primary key(id),
@@ -114,7 +114,7 @@ create table aula(
 );
 
 create table aluno_aula(
-    id SERIAL,
+    id INTEGER PRIMARY KEY,
     id_aula integer not null,
     id_aluno integer not null,
     constraint pk_aluno_aula primary key(id),
@@ -123,7 +123,7 @@ create table aluno_aula(
 );
 
 create table recuperacao(
-    id SERIAL,
+    id INTEGER PRIMARY KEY,
     id_aula integer not null,
     id_horario integer not null,
     constraint pk_recuperacao primary key(id),
