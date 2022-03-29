@@ -1,11 +1,12 @@
 <?php
     include '../../layouts/navbar.php';
+    include '../../controller/aluno/cadastro.php';
 ?>
 
 <div class="container">
     <div class="row mt-5">
         <h1 class="mt-1 display-3">Cadastro de Aluno</h1>
-        <form class="mt-5" action="#" method="#">
+        <form class="mt-5" action="cadastro.php" method="POST">
             <div class="form-group mt-3">
                 <label for="nome">Nome: </label>
                 <input type="text" class="form-control" id="nome" name="nome" required placeholder="Nome do Aluno">
