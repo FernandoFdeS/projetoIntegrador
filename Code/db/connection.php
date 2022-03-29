@@ -37,6 +37,7 @@ try {
                 id INTEGER PRIMARY KEY,
                 cpf varchar(11) not null,
                 nome varchar(100) not null,
+                username varchar(100) not null,
                 responsavel varchar(100),
                 data_nasc date not null,
                 senha varchar(100) not null,
