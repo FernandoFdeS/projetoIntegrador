@@ -49,7 +49,7 @@
             <div class="col-3 card-painel d-flex flex-row justify-content-between mt-4">
                 <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow">
                     <img src="../../images/matriculas-icon.png" width=75px>
-                    <p class="m-0 display-6">Matriculas</p>
+                    <a class="m-0 display-6" href="../matricula/index.php">Matriculas</a>
                 </div>            
             </div>  
             <div class="col-3 card-painel d-flex flex-row justify-content-between mt-4">
