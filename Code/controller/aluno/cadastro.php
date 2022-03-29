@@ -13,8 +13,17 @@
             if(isset($_POST['responsavel'])){
                 $responsavel = $_POST['responsavel'];
             }
-
-            $username = "user.name"; //vai ser feito um gerador
+            
+            //gera username 
+            $lower = strtolower($nome);
+            $separa = explode(" ", $lower);            
+            if(count($separa)==1){
+                $username = $separa[0].".".$cpf; //se tiver só primeiro nome vira "[nome].[cpf]"
+            } else {
+                $username = $separa[0].".".$separa[count($separa)-1]; //se tiver sobrenome vira "[nome].[ultimo nome]"
+            
+                //TODO: checar se já existe
+            }
 
             $datetime = new DateTime($dataNasc);
 
