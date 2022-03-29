@@ -13,14 +13,14 @@
         <?php
         foreach($cursos as $curso){
             echo'
-            <div class="col-12 card d-flex flex-row mt-3 justify-content-between">
+            <div class="col-12 card d-flex flex-row mb-3 justify-content-between">
                 <div class="d-flex flex-column" id="'.$curso['id'].'">
                     <p class="m-0 display-6">'.$curso['nome'].'</p>
                     <p class="m-0 text-muted display-3 mb-2" style="font-size:14px">'.$curso['nomeProfessor'].'</p>
                 </div>
                 <!-- Div abaixo ficara visivel apenas para administradores -->
                 <div class="d-flex align-items-center">
-                    <button class="btn-editar mx-2">
+                    <button onclick="location.href=\'edit.php?id='.$curso['id'].'\';" class="btn-editar mx-2">
                         <img src="../../images/edit-icon.png" width=40px>
                     </button>
                     <button class="btn-remover">

@@ -24,5 +24,7 @@
             echo 'Erro ao executar comando no banco de dados: ' . $e->getMessage();
             exit();
         }
+    } else {
+        header('Location:../../view/professor/index.php');
     }
 ?>
