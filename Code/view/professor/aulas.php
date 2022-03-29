@@ -12,10 +12,10 @@
 <div class="container">
     <div class="row mt-5">
         <h1 class="mt-1 display-3">
-            Nome do professor
+            Agenda
         </h1>
         <span class="btn-principal col-md-4 col-sm-12 mx-1 text-center mb-5">
-            <a>Editar Agenda</a>
+            <a href="indexHorario.php">Gerenciar Horários</a>
         </span>
         <span class="btn-principal col-md-4 col-sm-12 mx-1 text-center mb-5" onclick="funcaoIndisponivel()">
             <a>Marcar Recuperação</a>

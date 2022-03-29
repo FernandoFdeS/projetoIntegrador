@@ -69,7 +69,7 @@
 
                 <div class="form-group mt-3">
                     <label for="senha">Senha:</label>
-                    <input type="text" class="form-control" id="senha" name="senha" placeholder="Nova Senha" required>
+                    <input type="text" class="form-control" id="senha" name="senha" placeholder="Nova Senha" required value="'.$professor['senha'].'">
                 </div>
                 
                 <!-- id -->
