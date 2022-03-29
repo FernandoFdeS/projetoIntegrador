@@ -37,6 +37,7 @@ try {
                 id INTEGER PRIMARY KEY,
                 cpf varchar(11) not null,
                 nome varchar(100) not null,
+                username varchar(100) not null,
                 responsavel varchar(100),
                 data_nasc date not null,
                 senha varchar(100) not null,
@@ -106,7 +107,7 @@ try {
                 foreign key (id) references aula(id_aula)
             );
             INSERT INTO administrador(senha,email) values ("senha","adm");
-            INSERT INTO aluno(cpf,nome,data_nasc,senha,email) values ("00000000001","Aluno Teste","2002-01-01","senha","aluno");
+            INSERT INTO aluno(cpf,nome,username,data_nasc,senha,email) values ("00000000001","Aluno Teste","usernameAluno","2002-01-01","senha","aluno");
             INSERT INTO professor(cpf,nome,senha,email) values ("00000000002","Professor Teste","senha","professor");
             INSERT INTO horario(dia,periodo) values (0,"07:00-08:00");
             INSERT INTO horario(dia,periodo) values (0,"08:00-09:00");
