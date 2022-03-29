@@ -102,5 +102,13 @@
     }
 
     document.getElementById("senha").value = password
+   
+
+    document.getElementById("nav-painel").classList.add("active");
+    document.getElementById("nav-musica").classList.remove("active");
+    document.getElementById("nav-aulas").classList.remove("active");
+    document.getElementById("nav-perfil").classList.remove("active");
+    document.getElementById("nav-recitais").classList.remove("active");
+
 
 </script>

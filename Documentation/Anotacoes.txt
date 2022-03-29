@@ -1,0 +1,17 @@
+Fazer o gerador de user name na controller/aluno/cadastro.php
+
+Criar as views de edicao das entidades 
+(basicamente uma copia da de cadastro, mas chamando as funcoes responsaveis pela parte de update);
+
+Criar as funcoes nas controllers para fazer as edicoes
+(edit.php -> pega os dados da entidade que vamos editar)
+(update.php -> faz o update com as informacoes vindas do formulario de edicao)
+
+Criar as middlewares para gerencias os controles de acesso.
+(isLoged,isAdm,isProfessor,isAluno, sim os nomes sao horriveis)
+
+Criar as funcoes para popular as tabelas de aula do professor.
+
+Criar as funcoes responsaveis por fazer o update das musicas quando o status ou as anotacoes forem alterados.
+
+Deixar os campos de file-input funcionais e salvar os seus arquivos em algum lugar aqui das pastas.
