@@ -25,10 +25,19 @@
             <div class=" mt-5">
                 <button type="submit" class="btn-principal">Cadastrar</button>
                 <span class="btn-secundario mx-1">
-                    <a >Voltar</a>
+                    <a href="index.php" style="text-decoration:none;color:#005790">Voltar</a>
                 </span>
                
             </div>
         </form>
     </div>
 </div>
+<script>  
+
+    document.getElementById("nav-painel").classList.add("active");
+    document.getElementById("nav-musica").classList.remove("active");
+    document.getElementById("nav-aulas").classList.remove("active");
+    document.getElementById("nav-perfil").classList.remove("active");
+    document.getElementById("nav-recitais").classList.remove("active");
+    
+</script>

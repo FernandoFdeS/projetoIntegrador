@@ -31,7 +31,7 @@
             <div class="col-3 card-painel d-flex flex-row justify-content-between">
                 <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow">
                     <img src="../../images/professores-icon.png" width=100px>
-                    <p class="m-0 display-6">Professores</p>
+                    <a class="m-0 display-6" href="../professor/index.php">Professores</a>
                 </div>            
             </div> 
              <div class="col-3 card-painel d-flex flex-row justify-content-between">

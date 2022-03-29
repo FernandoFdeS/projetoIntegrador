@@ -1,5 +1,6 @@
 <?php
     include '../../layouts/navbar.php';
+    include '../../controller/professor/cadastro.php';
 ?>
 <style>
       input[type="file"]{
@@ -26,7 +27,7 @@
 <div class="container">
     <div class="row mt-5">
         <h1 class="mt-1 display-3">Cadastro de Professor</h1>
-        <form class="mt-5" action="#" method="#">
+        <form class="mt-5" action="cadastro.php" method="POST">
             <div class="form-group mt-3">
                 <label for="nome">Nome: </label>
                 <input type="text" class="form-control" id="nome" name="nome" required placeholder="Nome do Professor">
@@ -40,6 +41,7 @@
                 <input type="text" class="form-control" id="cpf" name="cpf" minlength="11" maxlength="11" required placeholder="00000000000">
             </div>
 
+            <!--
             <div class="form-group mt-3">
                 <label for="telefone" class="d-flex justify-content-between">
                    <span>Telefone:</span>
@@ -47,6 +49,7 @@
                 </label>
                 <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(XX) X XXXX-XXXX" required>                
             </div>
+             -->
 
             <div class="form-group mt-3">
                 <label for="contrato" class="d-flex justify-content-between">
@@ -70,7 +73,7 @@
             <div class=" mt-5 mb-5">
                 <button type="submit" class="btn-principal">Cadastrar</button>
                 <span class="btn-secundario mx-1">
-                    <a >Voltar</a>
+                    <a href="index.php" style="text-decoration:none;color:#005790">Voltar</a>
                 </span>
             </div>
         </form>
