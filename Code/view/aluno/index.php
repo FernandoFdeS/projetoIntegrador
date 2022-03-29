@@ -16,13 +16,11 @@
                 echo'           
                     <div class="col-12 card d-flex flex-row mt-3 justify-content-between">
                         <div class="d-flex flex-column">
-                            <p class="m-0 display-6">';
-                            echo $aluno['nome'];
-                            echo'
+                            <p class="m-0 display-6">'.$aluno['nome'].'                           
+                            
                             </p>
-                            <p class="m-0 text-muted display-3 mb-2" style="font-size:14px">CPF: ';
-                            echo $aluno['cpf'];
-                            echo'
+                            <p class="m-0 text-muted display-3 mb-2" style="font-size:14px">CPF:
+                                '.$aluno['cpf'].'                            
                             </p>
                         </div>
                         <!-- Div abaixo ficara visivel apenas para administradores -->

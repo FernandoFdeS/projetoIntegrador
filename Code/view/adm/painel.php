@@ -25,7 +25,7 @@
             <div class="col-3 card-painel d-flex flex-row justify-content-between">
                 <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow">
                     <img src="../../images/alunos-icon.png" width=75px>
-                    <p class="m-0 display-6">Alunos</p>
+                    <a class="m-0 display-6" href="../aluno/index.php">Alunos</a>
                 </div>            
             </div>  
             <div class="col-3 card-painel d-flex flex-row justify-content-between">
@@ -37,7 +37,7 @@
              <div class="col-3 card-painel d-flex flex-row justify-content-between">
                 <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow">
                     <img src="../../images/cursos-icon.png" width=125px>
-                    <p class="m-0 display-6">Cursos</p>
+                    <a class="m-0 display-6" href="../curso/index.php">Cursos</a>
                 </div>            
             </div>  
             <div class="col-3 card-painel d-flex flex-row justify-content-between ">

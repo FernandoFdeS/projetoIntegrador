@@ -13,20 +13,20 @@
                     if($_SESSION['Acesso']=='aluno'){  
                         echo('
                         <li class="nav-item ">
-                            <a class="nav-link text-light" href="#" id="nav-musica">MÚSICAS</a>
+                            <a class="nav-link text-light" href="../aluno/musicas.php" id="nav-musica">MÚSICAS</a>
                         </li>');
                     }
                     if($_SESSION['Acesso']=='adm'){
                         echo('                        
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#" id="nav-painel">PAINEL</a>
+                            <a class="nav-link text-light" href="../adm/painel.php" id="nav-painel">PAINEL</a>
                         </li>                     
                         ');
                     }
                     if($_SESSION['Acesso']=='professor'){
                         echo('
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#" id="nav-aulas">AULAS</a>                                       
+                            <a class="nav-link text-light" href="../professor/aulas.php" id="nav-aulas">AULAS</a>                                       
                         </li>
                         ');
                     }
