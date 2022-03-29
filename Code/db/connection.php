@@ -79,7 +79,7 @@ try {
             CREATE TABLE horario(
                 id INTEGER PRIMARY KEY,
                 dia smallint not null,
-                horario smallint not null   
+                periodo varchar(15)   
             );
 
             CREATE TABLE professor_horario(
@@ -107,7 +107,93 @@ try {
             );
             INSERT INTO administrador(senha,email) values ("senha","adm");
             INSERT INTO aluno(cpf,nome,data_nasc,senha,email) values ("00000000001","Aluno Teste","2002-01-01","senha","aluno");
-            INSERT INTO professor(cpf,nome,senha,email) values ("00000000002","Professor Teste","senha","professor")'
+            INSERT INTO professor(cpf,nome,senha,email) values ("00000000002","Professor Teste","senha","professor");
+            INSERT INTO horario(dia,periodo) values (0,"07:00-08:00");
+            INSERT INTO horario(dia,periodo) values (0,"08:00-09:00");
+            INSERT INTO horario(dia,periodo) values (0,"09:00-10:00");
+            INSERT INTO horario(dia,periodo) values (0,"10:00-11:00");
+            INSERT INTO horario(dia,periodo) values (0,"11:00-12:00");
+            INSERT INTO horario(dia,periodo) values (0,"13:00-14:00");
+            INSERT INTO horario(dia,periodo) values (0,"14:00-15:00");
+            INSERT INTO horario(dia,periodo) values (0,"15:00-16:00");
+            INSERT INTO horario(dia,periodo) values (0,"16:00-17:00");
+            INSERT INTO horario(dia,periodo) values (0,"17:00-18:00");
+            INSERT INTO horario(dia,periodo) values (0,"18:00-19:00");
+            INSERT INTO horario(dia,periodo) values (0,"19:00-20:00");
+            INSERT INTO horario(dia,periodo) values (0,"20:00-21:00");
+            INSERT INTO horario(dia,periodo) values (0,"21:00-22:00");
+            INSERT INTO horario(dia,periodo) values (1,"07:00-08:00");
+            INSERT INTO horario(dia,periodo) values (1,"08:00-09:00");
+            INSERT INTO horario(dia,periodo) values (1,"09:00-10:00");
+            INSERT INTO horario(dia,periodo) values (1,"10:00-11:00");
+            INSERT INTO horario(dia,periodo) values (1,"11:00-12:00");
+            INSERT INTO horario(dia,periodo) values (1,"13:00-14:00");
+            INSERT INTO horario(dia,periodo) values (1,"14:00-15:00");
+            INSERT INTO horario(dia,periodo) values (1,"15:00-16:00");
+            INSERT INTO horario(dia,periodo) values (1,"16:00-17:00");
+            INSERT INTO horario(dia,periodo) values (1,"17:00-18:00");
+            INSERT INTO horario(dia,periodo) values (1,"18:00-19:00");
+            INSERT INTO horario(dia,periodo) values (1,"19:00-20:00");
+            INSERT INTO horario(dia,periodo) values (1,"20:00-21:00");
+            INSERT INTO horario(dia,periodo) values (1,"21:00-22:00");
+            INSERT INTO horario(dia,periodo) values (2,"07:00-08:00");
+            INSERT INTO horario(dia,periodo) values (2,"08:00-09:00");
+            INSERT INTO horario(dia,periodo) values (2,"09:00-10:00");
+            INSERT INTO horario(dia,periodo) values (2,"10:00-11:00");
+            INSERT INTO horario(dia,periodo) values (2,"11:00-12:00");
+            INSERT INTO horario(dia,periodo) values (2,"13:00-14:00");
+            INSERT INTO horario(dia,periodo) values (2,"14:00-15:00");
+            INSERT INTO horario(dia,periodo) values (2,"15:00-16:00");
+            INSERT INTO horario(dia,periodo) values (2,"16:00-17:00");
+            INSERT INTO horario(dia,periodo) values (2,"17:00-18:00");
+            INSERT INTO horario(dia,periodo) values (2,"18:00-19:00");
+            INSERT INTO horario(dia,periodo) values (2,"19:00-20:00");
+            INSERT INTO horario(dia,periodo) values (2,"20:00-21:00");
+            INSERT INTO horario(dia,periodo) values (2,"21:00-22:00");
+            INSERT INTO horario(dia,periodo) values (3,"07:00-08:00");
+            INSERT INTO horario(dia,periodo) values (3,"08:00-09:00");
+            INSERT INTO horario(dia,periodo) values (3,"09:00-10:00");
+            INSERT INTO horario(dia,periodo) values (3,"10:00-11:00");
+            INSERT INTO horario(dia,periodo) values (3,"11:00-12:00");
+            INSERT INTO horario(dia,periodo) values (3,"13:00-14:00");
+            INSERT INTO horario(dia,periodo) values (3,"14:00-15:00");
+            INSERT INTO horario(dia,periodo) values (3,"15:00-16:00");
+            INSERT INTO horario(dia,periodo) values (3,"16:00-17:00");
+            INSERT INTO horario(dia,periodo) values (3,"17:00-18:00");
+            INSERT INTO horario(dia,periodo) values (3,"18:00-19:00");
+            INSERT INTO horario(dia,periodo) values (3,"19:00-20:00");
+            INSERT INTO horario(dia,periodo) values (3,"20:00-21:00");
+            INSERT INTO horario(dia,periodo) values (3,"21:00-22:00");
+            INSERT INTO horario(dia,periodo) values (4,"07:00-08:00");
+            INSERT INTO horario(dia,periodo) values (4,"08:00-09:00");
+            INSERT INTO horario(dia,periodo) values (4,"09:00-10:00");
+            INSERT INTO horario(dia,periodo) values (4,"10:00-11:00");
+            INSERT INTO horario(dia,periodo) values (4,"11:00-12:00");
+            INSERT INTO horario(dia,periodo) values (4,"13:00-14:00");
+            INSERT INTO horario(dia,periodo) values (4,"14:00-15:00");
+            INSERT INTO horario(dia,periodo) values (4,"15:00-16:00");
+            INSERT INTO horario(dia,periodo) values (4,"16:00-17:00");
+            INSERT INTO horario(dia,periodo) values (4,"17:00-18:00");
+            INSERT INTO horario(dia,periodo) values (4,"18:00-19:00");
+            INSERT INTO horario(dia,periodo) values (4,"19:00-20:00");
+            INSERT INTO horario(dia,periodo) values (4,"20:00-21:00");
+            INSERT INTO horario(dia,periodo) values (4,"21:00-22:00");
+            INSERT INTO horario(dia,periodo) values (5,"07:00-08:00");
+            INSERT INTO horario(dia,periodo) values (5,"08:00-09:00");
+            INSERT INTO horario(dia,periodo) values (5,"09:00-10:00");
+            INSERT INTO horario(dia,periodo) values (5,"10:00-11:00");
+            INSERT INTO horario(dia,periodo) values (5,"11:00-12:00");
+            INSERT INTO horario(dia,periodo) values (5,"13:00-14:00");
+            INSERT INTO horario(dia,periodo) values (5,"14:00-15:00");
+            INSERT INTO horario(dia,periodo) values (5,"15:00-16:00");
+            INSERT INTO horario(dia,periodo) values (5,"16:00-17:00");
+            INSERT INTO horario(dia,periodo) values (5,"17:00-18:00");
+            INSERT INTO horario(dia,periodo) values (5,"18:00-19:00");
+            INSERT INTO horario(dia,periodo) values (5,"19:00-20:00");
+            INSERT INTO horario(dia,periodo) values (5,"20:00-21:00");
+            INSERT INTO horario(dia,periodo) values (5,"21:00-22:00")
+            
+            '
         );  
     }
 } catch (PDOException $e) {
