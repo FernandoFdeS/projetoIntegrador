@@ -18,7 +18,7 @@
 
             $datetime = new DateTime($dataNasc);
 
-            $dataFormatada = $datetime->format('d/m/Y'); //nao tenho certeza se o formato ta certo
+            $dataFormatada = $datetime->format('Y-m-d'); 
 
             $comando = $db->prepare('INSERT INTO aluno(cpf,nome,username,senha,email,data_nasc,responsavel) values (:cpf,:nome,:username,:senha,:email,:dataNasc,:responsavel)');
             $comando->bindParam(':cpf',$cpf);

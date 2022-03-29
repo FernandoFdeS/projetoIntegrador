@@ -43,7 +43,7 @@
 
             <div class="form-group mt-3">
                 <label for="senha">Senha:</label>
-                <input type="text" class="form-control" id="senha" name="senha">
+                <input type="text" class="form-control" id="senha" name="senha" required>
             </div>
 
             <div class=" mt-5 mb-5">
