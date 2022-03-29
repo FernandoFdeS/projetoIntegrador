@@ -29,6 +29,7 @@
             $comando->bindParam(':dataNasc',$dataFormatada);
             $comando->bindParam(':responsavel',$responsavel);
             $comando->execute();
+            header('Location:index.php');
         }
 
     } catch (PDOException $e) {
