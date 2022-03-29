@@ -1,5 +1,5 @@
-create table aluno(
-    id SERIAL,
+CREATE TABLE aluno(
+    id INTEGER PRIMARY KEY ,
     cpf varchar(11) not null,
     nome varchar(100) not null,
     data_nasc date not null,
@@ -10,8 +10,8 @@ create table aluno(
     constraint pk_aluno primary key (id)
 );
 
-create table professor(
-    id SERIAL,
+CREATE TABLE professor(
+    id INTEGER PRIMARY KEY ,
     cpf varchar(11) not null,
     nome varchar(100) not null,
     senha varchar(100) not null,
@@ -20,23 +20,23 @@ create table professor(
     constraint pk_professor primary key(id) 
 );
 
-create table administrador(
-    id SERIAL,
+CREATE TABLE administrador(
+    id INTEGER PRIMARY KEY ,
     senha varchar(100) not null,
     email varchar(100) not null,
     constraint pk_administrador primary key (id)
 );
 
-create table curso(
-    id SERIAL,
+CREATE TABLE curso(
+    id INTEGER PRIMARY KEY ,
     nome varchar(100) not null,
     id_professor integer not null,
     constraint pk_curso primary key(id),
     constraint fk_curso_professor foreign key (id_professor) references professor(id)
 );
 
-create table matricula(
-    id SERIAL,
+CREATE TABLE matricula(
+    id INTEGER PRIMARY KEY ,
     id_aluno integer not null,
     id_curso integer not null,
     constraint pk_matricula primary key(id),
@@ -44,8 +44,8 @@ create table matricula(
     constraint fk_matricula_aluno foreign key (id_aluno) references aluno(id)
 );
 
-create table pagamento(
-    id SERIAL,
+CREATE TABLE pagamento(
+    id INTEGER PRIMARY KEY ,
     mes integer not null,
     data_vencimento date not null,
     data_pagamento date not null,
@@ -55,8 +55,8 @@ create table pagamento(
     constraint fk_pagamento_matricula foreign key (id_matricula) references matricula(id)
 );
 
-create table musica(
-    id SERIAL,
+CREATE TABLE musica(
+    id INTEGER PRIMARY KEY ,
     nome varchar(100) not null,
     artista varchar(100) not null,
     anotacoes varchar(300) not null,
@@ -70,16 +70,16 @@ create table musica(
     constraint fk_musica_aluno foreign key (id_aluno) references aluno(id)
 );
 
-create table recital(
-    id SERIAL,
+CREATE TABLE recital(
+    id INTEGER PRIMARY KEY ,
     ano varchar(20) not null,
     localizacao varchar(100) not null,
     link text,
     constraint pk_recital primary key(id),
 );
 
-create table aluno_recital(
-    id SERIAL,
+CREATE TABLE aluno_recital(
+    id INTEGER PRIMARY KEY ,
     data_apresentacao date not null;
     ordem smallint not null;
     id_recital integer not null;
@@ -88,15 +88,15 @@ create table aluno_recital(
     constraint fk_aluno_recital_recital foreign key (id_recital) references recital(id)
 );
 
-create table horario(
-    id SERIAL,
+CREATE TABLE horario(
+    id INTEGER PRIMARY KEY ,
     dia smallint not null,
     horario smallint not null,
     constraint pk_horario primary key(id)
 );
 
-create table professor_horario(
-    id SERIAL,
+CREATE TABLE professor_horario(
+    id INTEGER PRIMARY KEY ,
     id_horario integer not null,
     id_professor integer not null,
     constraint pk_professor_horario primary key(id),
@@ -104,8 +104,8 @@ create table professor_horario(
     constraint fk_professor_horario_professor foreign key (id_professor) references professor(id)
 );
 
-create table aula(
-    id SERIAL,
+CREATE TABLE aula(
+    id INTEGER PRIMARY KEY ,
     id_curso integer not null,
     id_horario integer not null, 
     constraint pk_aula primary key(id),
@@ -113,8 +113,8 @@ create table aula(
     constraint fk_aula_horario foreign key (id_horario) references horario(id)
 );
 
-create table aluno_aula(
-    id SERIAL,
+CREATE TABLE aluno_aula(
+    id INTEGER PRIMARY KEY ,
     id_aula integer not null,
     id_aluno integer not null,
     constraint pk_aluno_aula primary key(id),
@@ -122,8 +122,8 @@ create table aluno_aula(
     constraint fk_aluno_aula_aula foreign key (id_aula) references aula(id),
 );
 
-create table recuperacao(
-    id SERIAL,
+CREATE TABLE recuperacao(
+    id INTEGER PRIMARY KEY ,
     id_aula integer not null,
     id_horario integer not null,
     constraint pk_recuperacao primary key(id),
