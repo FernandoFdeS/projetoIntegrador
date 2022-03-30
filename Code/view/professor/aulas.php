@@ -365,10 +365,30 @@
     function funcaoIndisponivel(){
         alert("Função indisponível no momento");
     } 
-
     document.getElementById("nav-aulas").classList.add("active");
-    document.getElementById("nav-musica").classList.remove("active");
-    document.getElementById("nav-painel").classList.remove("active");
-    document.getElementById("nav-perfil").classList.remove("active");
-    document.getElementById("nav-recitais").classList.remove("active");
+    
+
+
+
+
+
+
+    const populaHorarios = (result)=>{
+        console.log(result)
+        for(var x =0;x<result['length'];x++){
+            console.log(result[x]['id']);
+            document.getElementById("horario-"+result[x]['id']).textContent = "-- Disponível --";
+            document.getElementById("horario-"+result[x]['id']).style.backgroundColor  = "white";
+        }
+    }
+    
+
+    window.onload = function() {  
+    fetch('../../controller/professor/getHorarioJson.php?id_professor=<?php echo($_SESSION['id']) ?>')
+        .then(response=>{response.json()
+            .then(data => populaHorarios(data))
+        }).catch(e => console.log('Deu Erro '+e.message));
+    };
+        
+
 </script>
