@@ -375,14 +375,28 @@
             document.getElementById("horario-"+result[x]['id']).style.backgroundColor  = "white";
         }
     }
+
+    const populaAulas = (result)=>{
+        console.log(result)
+        for(var x =0;x<result['length'];x++){
+            console.log(result[x]['id']);
+            document.getElementById("horario-"+result[x]['horario']).textContent = result[x]['nome'];
+            document.getElementById("horario-"+result[x]['horario']).style.backgroundColor  = "white";
+        }
+    }
     
 
     window.onload = function() {  
-    fetch('../../controller/professor/getHorarioJson.php?id_professor=<?php echo($_SESSION['id']) ?>')
-        .then(response=>{response.json()
-            .then(data => populaHorarios(data))
-        }).catch(e => console.log('Deu Erro '+e.message));
+        fetch('../../controller/professor/getHorariosJson.php?id_professor=<?php echo($_SESSION['id']) ?>')
+            .then(response=>{response.json()
+                .then(data => populaHorarios(data))
+            }).catch(e => console.log('Deu Erro '+e.message));
+        fetch('../../controller/professor/getAulasJson.php?id_professor=<?php echo($_SESSION['id']) ?>')
+            .then(response=>{response.json()
+                .then(data => populaAulas(data))
+            }).catch(e => console.log('Deu Erro '+e.message));
     };
+    
         
 
 </script>

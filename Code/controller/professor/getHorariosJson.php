@@ -6,7 +6,7 @@
         $id_professor=$_GET['id_professor'];       
         $sql=$db->prepare('SELECT horario.* 
         FROM HORARIO join PROFESSOR_HORARIO on HORARIO.id = PROFESSOR_HORARIO.id_horario
-        WHERE PROFESSOR_HORARIO.id_professor = :id_professor where PROFESSOR_HORARIO.disponivel="1" ORDER BY HORARIO.id;      
+        WHERE PROFESSOR_HORARIO.id_professor = :id_professor ORDER BY HORARIO.id;      
         ');
         $sql->bindParam(':id_professor',$id_professor);
         $sql->execute();
