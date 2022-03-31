@@ -85,6 +85,7 @@ try {
 
             CREATE TABLE professor_horario(
                 id INTEGER PRIMARY KEY,
+                disponivel INTEGER not null,
                 id_horario integer not null,
                 id_professor integer not null,    
                 foreign key (id) references horario(id_horario),

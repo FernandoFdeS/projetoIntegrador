@@ -16,7 +16,7 @@
             $id_professor=$_SESSION['id'];
             //echo($id_horario);
             //echo($id_professor);
-            $sql1 = $db->prepare('INSERT INTO professor_horario(id_horario,id_professor) values (:id_horario,:id_professor)');
+            $sql1 = $db->prepare('INSERT INTO professor_horario(id_horario,id_professor,disponivel) values (:id_horario,:id_professor,1)');
             $sql1->bindParam(':id_horario',$id_horario);
             $sql1->bindParam(':id_professor',$id_professor);
             $sql1->execute();

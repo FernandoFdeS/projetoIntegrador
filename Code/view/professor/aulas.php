@@ -367,14 +367,8 @@
     } 
     document.getElementById("nav-aulas").classList.add("active");
     
-
-
-
-
-
-
     const populaHorarios = (result)=>{
-        console.log(result)
+        //console.log(result)
         for(var x =0;x<result['length'];x++){
             console.log(result[x]['id']);
             document.getElementById("horario-"+result[x]['id']).textContent = "-- Disponível --";
