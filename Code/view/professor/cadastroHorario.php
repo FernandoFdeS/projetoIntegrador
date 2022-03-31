@@ -49,11 +49,5 @@
     </div>
 </div>
 <script>  
-
     document.getElementById("nav-aulas").classList.add("active");
-    document.getElementById("nav-painel").classList.remove("active");
-    document.getElementById("nav-musica").classList.remove("active");    
-    document.getElementById("nav-perfil").classList.remove("active");
-    document.getElementById("nav-recitais").classList.remove("active");
-    
 </script>
