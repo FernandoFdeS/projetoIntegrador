@@ -6,7 +6,7 @@ Criar páginas de delete de entidades
 Criar as middlewares para gerencias os controles de acesso.
 (isLoged,isAdm,isProfessor,isAluno, sim os nomes sao horriveis)
 
-Criar as funcoes para popular as tabelas de aula do professor.
+Mostrar nome dos alunos nas aulas na tabela de aula do professor
 
 Criar as funcoes responsaveis por fazer o update das musicas quando o status ou as anotacoes forem alterados.
 
@@ -22,3 +22,5 @@ Concluído (mas falta revisar)
     Criar as funcoes nas controllers para fazer as edicoes
     (edit.php -> pega os dados da entidade que vamos editar)
     (update.php -> faz o update com as informacoes vindas do formulario de edicao)
+
+    Criar as funcoes para popular as tabelas de aula do professor.
