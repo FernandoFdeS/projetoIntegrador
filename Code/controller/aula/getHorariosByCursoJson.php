@@ -7,7 +7,7 @@
         
         $sql=$db->prepare('SELECT horario.* from HORARIO
         JOIN PROFESSOR_HORARIO on HORARIO.id = PROFESSOR_HORARIO.id_horario
-        JOIN CURSO on CURSO.id_professor = PROFESSOR_HORARIO.id_professor WHERE CURSO.id = :id_curso AND PROFESSOR_HORARIO.disponivel = 1
+        JOIN CURSO on CURSO.id_professor = PROFESSOR_HORARIO.id_professor WHERE CURSO.id = :id_curso
         ORDER BY HORARIO.id');
         $sql->bindParam(':id_curso',$id_curso);
 
