@@ -12,6 +12,8 @@ Criar as funcoes responsaveis por fazer o update das musicas quando o status ou 
 
 Deixar os campos de file-input funcionais e salvar os seus arquivos em algum lugar aqui das pastas.
 
+Colocar o (WHERE professor_horario.disponivel = 1) no SELECT do getHorarioJson e no getHorariosByCursoJson.php
+
 Concluído (mas falta revisar)
 
     Criar as views de edicao das entidades 
