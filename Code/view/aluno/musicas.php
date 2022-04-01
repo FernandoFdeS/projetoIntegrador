@@ -37,6 +37,7 @@
         <span class="btn-principal col-md-4 col-sm-12 mx-1 text-center mb-5">
             <a href='../musica/cadastro.php?idAluno=<?php echo ($aluno['id']) ?>'>Adicionar Música +</a>
         </span>
+
         <div class="table-responsive px-0">
             <table class="table table-hover table-bordered mt-2 p-0">
                 <thead>
@@ -50,42 +51,73 @@
                         <th scope="col" colspan="2">Status</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>                        
-                        <td colspan="3">
-                            <div style="position:relative">
-                                <div class="status-badge verde" id="status-1">&nbsp</div>
-                                <div class="d-flex flex-column" style="margin-left:30px">                                
-                                    <p class="mb-1 font-weight-bold display-3" style="font-size:30px">Nome da Música</p>
-                                    <p class="mb-1 font-weight-light text-muted">Nome do artista</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td colspan="1" class="text-center px-0">
-                            <img src="../../images/cifra-icon.png" width="50px">
-                        </td>
-                        <td colspan="1" class="text-center px-0">
-                            <img src="../../images/none-icon.png" width="50px">
-                        </td>
-                        <td colspan="1" class="text-center px-0">
-                            <img src="../../images/none-icon.png" width="50px">
-                        </td>
-                        <td colspan="1" class="text-center px-0">
-                            <img src="../../images/none-icon.png" width="50px">
-                        </td>
-                        <td colspan="2">
-                            <textarea class="anotacoes" id="note-1" placeholder="..." onblur="quickNoteUpdate(1)"></textarea>
-                        </td>                         
-                        <td colspan="2">
-                            <select class="form-select" id="select-1" onchange="changeColor(1)">
-                                <option value="1">Aprendendo</option>
-                                <option value="2">Completo</option>
-                                <option value="3">Em espera</option>
-                                <option value="4">Planejando aprender</option>
-                            <select>
-                        </td>                        
-                    <tr>                                             
-               </tbody>
+            <?php 
+                foreach ($musicas as $musica){
+                    echo '
+                        <tbody>
+                            <tr>                        
+                                <td colspan="3">
+                                    <div style="position:relative">
+                                        <div class="status-badge verde" id="status-1">&nbsp</div>
+                                        <div class="d-flex flex-column" style="margin-left:30px">                                
+                                            <p class="mb-1 font-weight-bold display-3" style="font-size:30px">'.$musica['nome'].'</p>
+                                            <p class="mb-1 font-weight-light text-muted">'.$musica['artista'].'</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td colspan="1" class="text-center px-0">';
+                                if($musica['cifra']!=NULL){
+                                    echo '<img src="../../images/cifra-icon.png" width="50px">';
+                                } else {
+                                    echo '<img src="../../images/none-icon.png" width="50px">';
+                                }
+                            echo '
+                                </td>
+                                <td colspan="1" class="text-center px-0">';
+                                if($musica['link']!=NULL){
+                                    echo '<a href="'.$musica['link'].'" target="_blank"><img src="../../images/link-icon.png" width="50px"></a>';
+                                } else {
+                                    echo '<img src="../../images/none-icon.png" width="50px">';
+                                }
+                            echo '
+                                </td>
+                                <td colspan="1" class="text-center px-0">';
+                                if($musica['arquivo_musica']!=NULL){
+                                    echo '<img src="../../images/none-icon.png" width="50px">';
+                                } else {
+                                    echo '<img src="../../images/none-icon.png" width="50px">';
+                                }
+                            echo '
+                                </td>
+                                <td colspan="1" class="text-center px-0">';
+                                switch($musica['instrumento']){
+                                    case 1:
+                                        echo '<img src="https://revistatrip.uol.com.br/_lib/common/imgCrop.php?params=chimbinha01.jpg_._620_._460" width="50px">';
+                                        break;
+                                    case 2:
+                                        echo '<img src="https://media.istockphoto.com/photos/man-singing-song-with-microphone-picture-id529494379" width="50px">';
+                                        break;
+                                    case 3:
+                                        echo '<img src="https://cdn.w600.comps.canstockphoto.com.br/piano-m%C3%A3os-tocando-teclado-fotografia-de-stock_csp64180596.jpg" width="50px">';
+                                        break;    
+                                }               //nao mexi no status ainda porque não sei como vai ser feita a ordenação deles
+                            echo '
+                                </td>
+                                <td colspan="2">
+                                    <textarea class="anotacoes" id="note-1" placeholder="..." onblur="quickNoteUpdate(1)">'.$musica['anotacoes'].'</textarea>
+                                </td>                         
+                                <td colspan="2">
+                                    <select class="form-select" id="select-1" onchange="changeColor(1)">
+                                        <option value="1">Aprendendo</option>
+                                        <option value="2">Completo</option>
+                                        <option value="3">Em espera</option>            
+                                        <option value="4">Planejando aprender</option>
+                                    <select>
+                                </td>                        
+                            <tr>                                             
+                    </tbody>';
+                }       
+            ?>
             </table>
         </div>
     </div>
