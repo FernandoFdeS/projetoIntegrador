@@ -22,9 +22,6 @@
                     </div>
                     <!-- Div abaixo ficara visivel apenas para administradores -->
                     <div class="d-flex align-items-center" id="'.$matricula['id'].'">
-                        <button class="btn-editar mx-2">
-                            <img src="../../images/edit-icon.png" width=40px>
-                        </button>
                         <button class="btn-remover">
                             <img src="../../images/delete-icon.png" width=40px>
                         </button>

@@ -1,4 +1,7 @@
 <?php
+    if(!isset($_GET['idAluno'])){
+        header('Location:../aluno/musicas.php');
+    }
     include '../../layouts/navbar.php';
 ?>
 
@@ -28,12 +31,12 @@
 <div class="container">
     <div class="row mt-5">
         <h1 class="mt-1 display-3">Inserir Música</h1>
-        <form class="mt-5" action="#" method="#">
+        <form class="mt-5" action="../../controller/musica/cadastro.php" method="POST">
 
             <div class="row mt-3">
                 <div class="col-6">
-                    <label for="musica">Título: </label>
-                    <input type="text" class="form-control" id="musica" name="musica" placeholder="Título da Música" required>
+                    <label for="titulo">Título: </label>
+                    <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Título da Música" required>
                 </div>
 
                 <div class="col-6">
@@ -47,7 +50,7 @@
                     <label for="cifra" class="d-flex justify-content-between">
                         <span>Cifra:</span>
                         <span class="text-muted display-3" style="font-size:15px;">Opcional</span>
-                    </label>                       <!-- placeholder até achar um jeito melhor -->
+                    </label>                      
                     <label for="cifra" id="btnCifra" class="btn-file">Escolha a cifra</label>
                     <input type="file" class="" id="cifra" placeholder="Insira a cifra:" name="cifra" onChange="changeCifraLabel()">                   
                 </div>
@@ -56,7 +59,7 @@
                     <label for="arquivo" class="d-flex justify-content-between">
                         <span>Arquivo:</span>
                         <span class="text-muted display-3" style="font-size:15px;">Opcional</span>
-                    </label>                       <!-- placeholder até achar um jeito melhor -->
+                    </label>                     
                     <label for="arquivo" id="btnFile" class="btn-file">Escolha o arquivo</label>
                     <input type="file" class="" id="arquivo" placeholder="Insira o arquivo:" name="arquivo" onChange="changeArquivoLabel()">                   
                 </div>
@@ -100,6 +103,7 @@
                     </select>
             </div>            
 
+            <input type="hidden" id="idAluno" name="idAluno" value="<?php echo ($_GET['idAluno']) ?>">
 
             <div class="mt-5 mb-5">
                 <button type="submit" class="btn-principal">Cadastrar</button>

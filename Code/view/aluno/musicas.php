@@ -35,7 +35,7 @@
             <?php echo ($aluno['nome']) ?>
         </h1>
         <span class="btn-principal col-md-4 col-sm-12 mx-1 text-center mb-5">
-            <a>Adicionar Música +</a>
+            <a href='../musica/cadastro.php?idAluno=<?php echo ($aluno['id']) ?>'>Adicionar Música +</a>
         </span>
         <div class="table-responsive px-0">
             <table class="table table-hover table-bordered mt-2 p-0">
