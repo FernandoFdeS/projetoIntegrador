@@ -69,7 +69,7 @@ try {
                 nome varchar(100) not null,
                 artista varchar(100) not null,
                 anotacoes varchar(300) not null,
-                progessao smallint not null, -- 0 -> aprendendo, 1 -> completo, 2 -> em espera, 3 -> planejando aprender
+                progressao smallint not null, -- 0 -> aprendendo, 1 -> completo, 2 -> em espera, 3 -> planejando aprender
                 cifra varchar(150),
                 link varchar(150),
                 arquivo_musica varchar(150),
