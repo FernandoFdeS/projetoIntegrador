@@ -49,6 +49,7 @@
                         <th scope="col" colspan="1" class="text-center px-0">Instrumento</th>
                         <th scope="col" colspan="2">Anotações</th>
                         <th scope="col" colspan="2">Status</th>
+                        <th scope="col" colspan="2">Editar</th>
                     </tr>
                 </thead>
             <?php 
@@ -113,7 +114,15 @@
                                         <option value="3">Em espera</option>            
                                         <option value="4">Planejando aprender</option>
                                     <select>
-                                </td>                        
+                                </td>
+                                <td colspan="2">
+                                    <button onclick="location.href=\'../musica/edit.php?idAluno='.$aluno['id'].'&idMusica='.$musica['id'].'\';" class="btn-editar mx-2">
+                                        <img src="../../images/edit-icon.png" width=40px>
+                                    </button>
+                                    <button onclick="location.href=\'../../controller/musica/delete.php?idAluno='.$aluno['id'].'&idMusica='.$musica['id'].'\';" class="btn-remover">
+                                        <img src="../../images/delete-icon.png" width=40px>
+                                    </button>
+                                </td>
                             <tr>                                             
                     </tbody>';
                 }       

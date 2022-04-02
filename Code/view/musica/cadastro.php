@@ -76,7 +76,7 @@
 
                 <div class="col-6">
                     <label for="instrumento">Instrumento: </label>
-                    <select class="form-select" aria-label="Default select example" name="instrumento" id="instrumento">
+                    <select class="form-select" aria-label="Default select example" name="instrumento" id="instrumento" required>
                         <option value="" selected disabled>Selecione um instrumento</option>
                         <option value="1">Violão 🎸</option>
                         <option value="2">Voz 🎙️</option>

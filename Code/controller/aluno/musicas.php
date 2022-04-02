@@ -1,6 +1,10 @@
 <?php    
-    $id=$_SESSION["id"]; //lembrar de pegar isso de outra forma pro professor poder acessar diversos alunos
-
+    if($_SESSION['acesso'] = 'aluno') {
+        $id = $_SESSION["id"];
+    } else {
+        $id = $_GET["id"];
+    }
+        
     $sql = $db->prepare('SELECT * FROM aluno WHERE id = :id');
     $sql->bindParam(':id',$id);
     $sql->execute();             
