@@ -22,7 +22,7 @@
                     </div>
                     <!-- Div abaixo ficara visivel apenas para administradores -->
                     <div class="d-flex align-items-center" id="'.$matricula['id'].'">
-                        <button class="btn-remover">
+                        <button onclick="location.href=\'../../controller/matricula/delete.php?id='.$matricula['id'].'\';" class="btn-remover">
                             <img src="../../images/delete-icon.png" width=40px>
                         </button>
                     </div>

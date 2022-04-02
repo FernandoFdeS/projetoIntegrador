@@ -28,7 +28,7 @@
                             <button onclick="location.href=\'edit.php?id='.$aluno['id'].'\';" class="btn-editar mx-2">
                                 <img src="../../images/edit-icon.png" width=40px>
                             </button>
-                            <button class="btn-remover">
+                            <button onclick="location.href=\'../../controller/aluno/delete.php?id='.$aluno['id'].'\';" class="btn-remover">
                                 <img src="../../images/delete-icon.png" width=40px>
                             </button>
                         </div>

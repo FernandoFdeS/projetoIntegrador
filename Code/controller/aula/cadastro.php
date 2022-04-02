@@ -17,7 +17,7 @@
             $sql = $db->prepare('INSERT INTO Aula(id_curso,id_horario) values (:id_curso,:id_horario)');
             $sql->bindParam(':id_curso',$id_curso);
             $sql->bindParam(':id_horario',$id_horario);
-            //$sql->execute();
+            $sql->execute();
 
             //pegamos o id da ultima aula cadastrada com essas caracteristicas
 

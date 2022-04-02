@@ -55,14 +55,14 @@ try {
                 id INTEGER PRIMARY KEY,
                 nome varchar(100) not null,
                 id_professor integer not null,
-                FOREIGN KEY (id) references professor(id_professor)
+                FOREIGN KEY (id) references professor(id_professor) ON DELETE CASCADE
             );
             CREATE TABLE matricula(
                 id INTEGER PRIMARY KEY,
                 id_aluno integer not null,
                 id_curso integer not null,    
-                foreign key (id) references curso(id_curso),
-                foreign key (id) references aluno(id_aluno)
+                foreign key (id) references curso(id_curso) ON DELETE CASCADE,
+                foreign key (id) references aluno(id_aluno) ON DELETE CASCADE
             );
             CREATE TABLE musica(
                 id INTEGER PRIMARY KEY,
@@ -75,7 +75,7 @@ try {
                 arquivo_musica varchar(150),
                 instrumento smallint not null,
                 id_aluno integer not null,
-                foreign key (id) references aluno(id_aluno)
+                foreign key (id) references aluno(id_aluno) ON DELETE CASCADE
             );
             CREATE TABLE horario(
                 id INTEGER PRIMARY KEY,
@@ -85,27 +85,26 @@ try {
 
             CREATE TABLE professor_horario(
                 id INTEGER PRIMARY KEY,
-                disponivel INTEGER not null,
                 id_horario integer not null,
                 id_professor integer not null,    
-                foreign key (id) references horario(id_horario),
-                foreign key (id) references professor(id_professor)
+                foreign key (id) references horario(id_horario) ON DELETE CASCADE,
+                foreign key (id) references professor(id_professor) ON DELETE CASCADE
             );
 
             CREATE TABLE aula(
                 id INTEGER PRIMARY KEY,
                 id_curso integer not null,
                 id_horario integer not null, 
-                foreign key (id) references curso(id_curso),
-                foreign key (id) references horario(id_horario)
+                foreign key (id) references curso(id_curso) ON DELETE CASCADE,
+                foreign key (id) references horario(id_horario) ON DELETE CASCADE
             );
 
             CREATE TABLE aluno_aula(
                 id INTEGER PRIMARY KEY,
                 id_aula integer not null,
                 id_aluno integer not null,
-                foreign key (id) references aluno(id_aluno),
-                foreign key (id) references aula(id_aula)
+                foreign key (id) references aluno(id_aluno) ON DELETE CASCADE,
+                foreign key (id) references aula(id_aula) ON DELETE CASCADE
             );
             INSERT INTO administrador(senha,email) values ("senha","adm");
             INSERT INTO aluno(cpf,nome,username,data_nasc,senha,email) values ("00000000001","Aluno Teste","usernameAluno","2002-01-01","senha","aluno");
