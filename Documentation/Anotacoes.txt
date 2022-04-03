@@ -1,15 +1,37 @@
-Colocar as middlewares nas paginas certas
+# Importante:
 
-Colocar as mensagens de "criado com sucesso" e etc na $_SESSION[flash-msg] nas controllers (e as cores de fundo, ex: $_SESSION[flash-bg]="success")
+Deixar os campos de file-input funcionais e salvar os seus arquivos em algum lugar aqui das pastas. # Fernando
+
+No botao de perfil levar para a pagina de edit do usuario logado. # Fernando
+
+Pagina de aula dos alunos. # Fernando
+
+CRUD Adm. # Bordin
+
+Arrumar os instrumentos. # Bordin
+
+Botoes inteiros devem levar para as paginas, e nao apenas ao clicar no texto. # Fernando
+
+Na tabela de aulas, ao clicar no nome do aluno devera ser redirecionado ate a pagina de musicas do aluno. # Fernando
+
+Excluir as aulas do aluno quando ele for deletado do banco. # Bordin
+
+Funcao de delete de aula. # Bordin
+
+Colocar as middlewares nas paginas certas. # Qualquer um
+
+Mensagens Flash. # Qualquer um 
+
+# So frescura |
+              v
+
+Colocar as mensagens de "criado com sucesso" e etc na $_SESSION['flash-msg'] nas controllers (e as cores de fundo, ex: $_SESSION['flash-bg']="success")
 e importar o footer no final das paginas que vao ter mensagens.
-
-Deixar os campos de file-input funcionais e salvar os seus arquivos em algum lugar aqui das pastas.
 
 Colocar o (WHERE professor_horario.disponivel = 1) no SELECT do getHorarioJson e no getHorariosByCursoJson.php
 
-Concluído (mas falta revisar)
+Concluído (mas falta revisar) --------------------------
 
-    
     Criar as funcoes responsaveis por fazer o update das musicas quando o status ou as anotacoes forem alterados
 
     Criar as views de edicao das entidades 
