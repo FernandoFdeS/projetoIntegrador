@@ -73,3 +73,7 @@
     document.getElementById("nav-recitais").classList.remove("active");
     
 </script>
+
+<?php
+    include '../../layouts/footer.php';
+?>

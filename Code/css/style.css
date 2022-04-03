@@ -124,3 +124,13 @@ a:hover{
     border: 5px solid #5E82DF;
     cursor: pointer;
 }
+
+.flash-msg{
+    animation: fadeOut 5s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;} 
+ } 
