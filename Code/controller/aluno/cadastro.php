@@ -1,6 +1,6 @@
 <?php
     require '../../db/connection.php';
-
+    
 
     try {
         if(isset($_POST['nome'])&&isset($_POST['cpf'])&&isset($_POST['senha'])&&isset($_POST['email'])&&isset($_POST['dataNasc'])){
@@ -21,9 +21,18 @@
                 $username = $separa[0].".".$cpf; //se tiver só primeiro nome vira "[nome].[cpf]"
             } else {
                 $username = $separa[0].".".$separa[count($separa)-1]; //se tiver sobrenome vira "[nome].[ultimo nome]"
-            
-                //TODO: checar se já existe
+                
+                //checa se já existe
+                $comando = $db->prepare('SELECT * FROM aluno WHERE username=:username');
+                $comando->bindParam(':username',$username);
+                $comando->execute();
+                $row = $comando->fetch(PDO::FETCH_ASSOC);
+
+                if($row){
+                    $username = $username.".".$cpf; //se já exitir vira [nome].[ultimo nome].[cpf]
+                }
             }
+
 
             $datetime = new DateTime($dataNasc);
 
@@ -42,8 +51,13 @@
         }
 
     } catch (PDOException $e) {
-        echo 'Erro ao executar comando no banco de dados: ' . $e->getMessage();
+        if ($e->getCode()==23000){
+            echo '<p>Falha no cadastro: Este e-mail já existe!</p>';
+            echo '<a href="../../view/aluno/index.php" style="text-decoration:none;color:#005790">Voltar</a>';
+        } else {
+            echo 'Erro ao executar comando no banco de dados: ' . $e->getMessage();
+        }
         exit();
-    }
+    } 
 
 ?>

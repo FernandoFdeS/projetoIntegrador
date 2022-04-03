@@ -36,7 +36,12 @@
             header('Location:../../view/aluno/index.php');
 
         } catch (PDOException $e) {
-            echo 'Erro ao executar comando no banco de dados: ' . $e->getMessage();
+            if ($e->getCode()==23000){
+                echo '<p>Falha na alteração: E-mail ou nome de usuário já existente!</p>';
+                echo '<a href="../../view/aluno/index.php" style="text-decoration:none;color:#005790">Voltar</a>';
+            } else {
+                echo 'Erro ao executar comando no banco de dados: ' . $e->getMessage();
+            }
             exit();
         }
     } else {
