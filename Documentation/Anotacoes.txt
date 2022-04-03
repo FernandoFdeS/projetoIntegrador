@@ -1,10 +1,5 @@
 
-Criar as middlewares para gerencias os controles de acesso.
-(isLoged,isAdm,isProfessor,isAluno, sim os nomes sao horriveis)
-
-Mostrar nome dos alunos nas aulas na tabela de aula do professor
-
-Criar as funcoes responsaveis por fazer o update das musicas quando o status ou as anotacoes forem alterados.
+Criar as funcoes responsaveis por fazer o update das musicas quando o status ou as anotacoes forem alterados
 
 Deixar os campos de file-input funcionais e salvar os seus arquivos em algum lugar aqui das pastas.
 
@@ -25,3 +20,9 @@ Concluído (mas falta revisar)
 
     Checar se um email ou username já estão cadastrados antes de inserir
     -Checar também no gerador de username pra gerar outro em caso de conflito
+
+    Criar as middlewares para gerencias os controles de acesso.
+    (isLoged,isAdm,isProfessor,isAluno, sim os nomes sao horriveis)
+
+    Mostrar nome dos alunos nas aulas na tabela de aula do professor
+
