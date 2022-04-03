@@ -108,7 +108,7 @@
             <div class="mt-5 mb-5">
                 <button type="submit" class="btn-principal">Cadastrar</button>
                 <span class="btn-secundario mx-1">
-                    <a >Voltar</a>
+                    <a href="#" style="text-decoration:none;color:#005790">Voltar</a>
                 </span>
             </div>
         </form>

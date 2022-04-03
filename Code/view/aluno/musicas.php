@@ -37,7 +37,8 @@
         <span class="btn-principal col-md-4 col-sm-12 mx-1 text-center mb-5">
             <a href='../musica/cadastro.php?idAluno=<?php echo ($aluno['id']) ?>'>Adicionar Música +</a>
         </span>
-
+        <?php
+        if(count($musicas)>0){echo'
         <div class="table-responsive px-0">
             <table class="table table-hover table-bordered mt-2 p-0">
                 <thead>
@@ -52,6 +53,8 @@
                         <th scope="col" colspan="2">Editar</th>
                     </tr>
                 </thead>
+            ';}
+            ?>
             <?php 
                 foreach ($musicas as $musica){
                     echo '
@@ -59,7 +62,17 @@
                             <tr>                        
                                 <td colspan="3">
                                     <div style="position:relative">
-                                        <div class="status-badge verde" id="status-1">&nbsp</div>
+                                        <div class="status-badge '; 
+                                        if($musica['progressao']==1){
+                                            echo'verde';
+                                        }elseif($musica['progressao']==2){
+                                            echo'azul';
+                                        }elseif($musica['progressao']==3){
+                                            echo'amarelo';
+                                        }elseif($musica['progressao']==4){
+                                            echo'cinza';
+                                        }
+                                        echo'" id="status-'.$musica['id'].'">&nbsp</div>
                                         <div class="d-flex flex-column" style="margin-left:30px">                                
                                             <p class="mb-1 font-weight-bold display-3" style="font-size:30px">'.$musica['nome'].'</p>
                                             <p class="mb-1 font-weight-light text-muted">'.$musica['artista'].'</p>
@@ -105,22 +118,22 @@
                             echo '
                                 </td>
                                 <td colspan="2">
-                                    <textarea class="anotacoes" id="note-1" placeholder="..." onblur="quickNoteUpdate(1)">'.$musica['anotacoes'].'</textarea>
+                                    <textarea class="anotacoes" id="note-'.$musica['id'].'" placeholder="..." onblur="quickNoteUpdate('.$musica['id'].')">'.$musica['anotacoes'].'</textarea>
                                 </td>                         
                                 <td colspan="2">
-                                    <select class="form-select" id="select-1" onchange="changeColor(1)">
-                                        <option value="1">Aprendendo</option>
-                                        <option value="2">Completo</option>
-                                        <option value="3">Em espera</option>            
-                                        <option value="4">Planejando aprender</option>
+                                    <select class="form-select" id="select-'.$musica['id'].'" onchange="changeColor('.$musica['id'].')">
+                                        <option value="1"';echo $musica['progressao']==1 ? 'selected':''; echo'>Aprendendo</option>
+                                        <option value="2"';echo $musica['progressao']==2 ? 'selected':''; echo'>Completo</option>
+                                        <option value="3"';echo $musica['progressao']==3 ? 'selected':''; echo'>Em espera</option>            
+                                        <option value="4"';echo $musica['progressao']==4 ? 'selected':''; echo'>Planejando aprender</option>
                                     <select>
                                 </td>
-                                <td colspan="2">
-                                    <button onclick="location.href=\'../musica/edit.php?idAluno='.$aluno['id'].'&idMusica='.$musica['id'].'\';" class="btn-editar mx-2">
-                                        <img src="../../images/edit-icon.png" width=40px>
+                                <td colspan="2" class="d-flex justify-content-center flex-column align-items-center" >
+                                    <button onclick="location.href=\'../musica/edit.php?idAluno='.$aluno['id'].'&idMusica='.$musica['id'].'\';" class="btn-editar-sm mx-2 my-1">
+                                        <img src="../../images/edit-icon.png" width=18px>
                                     </button>
-                                    <button onclick="location.href=\'../../controller/musica/delete.php?idAluno='.$aluno['id'].'&idMusica='.$musica['id'].'\';" class="btn-remover">
-                                        <img src="../../images/delete-icon.png" width=40px>
+                                    <button onclick="location.href=\'../../controller/musica/delete.php?idAluno='.$aluno['id'].'&idMusica='.$musica['id'].'\';" class="btn-remover-sm my-1">
+                                        <img src="../../images/delete-icon.png" width=18px>
                                     </button>
                                 </td>
                             <tr>                                             
@@ -132,10 +145,9 @@
     </div>
 </div>
 <script>
-    function changeColor(id){ //funcao responsavel por mudar a cor da badge do status
+    function changeColor(id){
         var badge=document.getElementById('status-'+id);
-        var option=document.getElementById('select-'+id).value;
-        console.log(option);
+        var option=document.getElementById('select-'+id).value;   
         badge.classList.remove("azul");
         badge.classList.remove("verde");
         badge.classList.remove("amarelo");
@@ -148,17 +160,14 @@
             badge.classList.add("amarelo");
         } else if(option==4){
             badge.classList.add("cinza");
-        }        
-    } 
-    //OBS: futuramente tambem sera responsavel for atualizar no banco quando o select for alterado (usando ajax e etc)
-    //O mesmo se aplica para quando mudarmos as anotacoes.
+        }
+        fetch('../../controller/aluno/updateStatusJson.php?id_musica='+id+"&id_status="+option);        
+    }
 
     function quickNoteUpdate(id){
-        var note=document.getElementById('note-'+id).value;
-        //faz uma requisicao ajax atualizando no banco o campo anotacoes da musica com o id passado
-        //remover esse alert bobo quando a funcao estiver funcional
-        alert("Anotações salvas!");
-        alert("kkkkmentira");
+        var note=document.getElementById('note-'+id).value;        
+        fetch('../../controller/aluno/updateNotesJson.php?id_musica='+id+"&note="+note);        
+        
     }
     document.getElementById("nav-musica").classList.add("active");
     document.getElementById("nav-painel").classList.remove("active");    

@@ -88,3 +88,39 @@ a:hover{
     border: 5px solid #E55E5E;
     cursor: pointer;
 }
+
+.btn-remover-sm{
+    background-color:#FF7575;
+    border: 5px solid #E55E5E;
+    color:white;
+    border-radius:8px;
+    width:26px;
+    height:26px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-remover-sm:hover{
+    background-color:#E55E5E;
+    border: 5px solid #E55E5E;
+    cursor: pointer;
+}
+
+.btn-editar-sm{
+    background-color:#759CFF;
+    border: 5px solid #5E82DF;
+    color:white;
+    border-radius:8px;
+    width:26px;
+    height:26px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-editar-sm:hover{
+    background-color:#6185E2;
+    border: 5px solid #5E82DF;
+    cursor: pointer;
+}

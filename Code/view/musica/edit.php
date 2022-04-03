@@ -108,7 +108,7 @@
                 <div class="mt-5 mb-5">
                     <button type="submit" class="btn-principal">Salvar</button>
                     <span class="btn-secundario mx-1">
-                        <a href="../aluno/musicas.php?id='.$_GET['idAluno'].'">Voltar</a>
+                        <a href="../aluno/musicas.php?id='.$_GET['idAluno'].'" style="text-decoration:none;color:#005790">Voltar</a>
                     </span>
                 </div>
                 ';
