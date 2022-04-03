@@ -1,7 +1,3 @@
-Checar se um email ou username já estão cadastrados antes de inserir
-    -Checar também no gerador de username pra gerar outro em caso de conflito
-
-Criar páginas de delete de entidades
 
 Criar as middlewares para gerencias os controles de acesso.
 (isLoged,isAdm,isProfessor,isAluno, sim os nomes sao horriveis)
@@ -24,3 +20,8 @@ Concluído (mas falta revisar)
     (update.php -> faz o update com as informacoes vindas do formulario de edicao)
 
     Criar as funcoes para popular as tabelas de aula do professor.
+
+    Criar páginas de delete de entidades
+
+    Checar se um email ou username já estão cadastrados antes de inserir
+    -Checar também no gerador de username pra gerar outro em caso de conflito
