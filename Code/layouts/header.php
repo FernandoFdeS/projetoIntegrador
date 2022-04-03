@@ -1,6 +1,7 @@
 <?php
     session_start();
     require '../../db/connection.php';
+    include '../../controller/middleware/isAuth.php';
     echo'   <!doctype html>
     <html lang="pt-br">
       <head>
