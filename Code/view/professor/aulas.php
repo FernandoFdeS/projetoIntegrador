@@ -384,6 +384,20 @@
             document.getElementById("horario-"+result[x]['horario']).style.backgroundColor  = "white";
         }
     }
+
+    const populaAlunos = (result)=>{
+        console.log(result)
+        for(var x =0;x<result['length'];x++){
+            console.log(result[x]['id']);
+            var p = document.createElement("p");
+            p.textContent +=result[x]['nome'];
+            p.classList.add("text-muted");
+            p.style.fontSize = "12px";
+            console.log(p)
+            document.getElementById("horario-"+result[x]['horario']).appendChild(p);           
+                        
+        }
+    }
     
 
     window.onload = function() {  
@@ -394,6 +408,10 @@
         fetch('../../controller/professor/getAulasJson.php?id_professor=<?php echo($_SESSION['id']) ?>')
             .then(response=>{response.json()
                 .then(data => populaAulas(data))
+            }).catch(e => console.log('Deu Erro '+e.message));
+            fetch('../../controller/professor/getAlunosJson.php?id_professor=<?php echo($_SESSION['id']) ?>')
+            .then(response=>{response.json()
+                .then(data => populaAlunos(data))
             }).catch(e => console.log('Deu Erro '+e.message));
     };
     
