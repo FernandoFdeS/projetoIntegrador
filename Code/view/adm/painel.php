@@ -1,5 +1,6 @@
 <?php
     include '../../layouts/navbar.php';
+    include '../../controller/middleware/isAdm.php';
 ?>
 
 <style>
@@ -30,7 +31,7 @@
             </div>  
             <div class="col-3 card-painel d-flex flex-row justify-content-between">
                 <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow">
-                    <img src="../../images/professores-icon.png" width=100px>
+                    <img src="../../images/professores-icon.png" width=75px>
                     <a class="m-0 display-6" href="../professor/index.php">Professores</a>
                 </div>            
             </div> 
@@ -39,8 +40,14 @@
                     <img src="../../images/cursos-icon.png" width=125px>
                     <a class="m-0 display-6" href="../curso/index.php">Cursos</a>
                 </div>            
-            </div>  
-            <div class="col-3 card-painel d-flex flex-row justify-content-between ">
+            </div>
+            <div class="col-3 card-painel d-flex flex-row justify-content-between">
+                <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow">
+                    <img src="../../images/aula-icon.png" width=125px>
+                    <a class="m-0 display-6" href="../aula/index.php">Aulas</a>
+                </div>            
+            </div>                
+            <div class="col-3 card-painel d-flex flex-row justify-content-between mt-4">
                 <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow" onclick="funcaoIndisponivel()">
                     <img src="../../images/pagamentos-icon.png" width=75px>
                     <p class="m-0 display-6">Pagamentos</p>
