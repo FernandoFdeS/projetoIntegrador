@@ -2,7 +2,7 @@
     require '../../db/connection.php';
 
     try {
-        $sql=$db->prepare('SELECT nome,cpf,id FROM professor');
+        $sql=$db->prepare('SELECT nome,cpf,id,contrato FROM professor');
         $sql->execute();
         $professores=$sql->fetchAll(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {

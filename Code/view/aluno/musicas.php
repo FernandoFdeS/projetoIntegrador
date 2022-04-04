@@ -118,7 +118,7 @@
                                     case 3:
                                         echo '<img src="https://cdn.w600.comps.canstockphoto.com.br/piano-m%C3%A3os-tocando-teclado-fotografia-de-stock_csp64180596.jpg" width="50px">';
                                         break;    
-                                }               //nao mexi no status ainda porque não sei como vai ser feita a ordenação deles
+                                }
                             echo '
                                 </td>
                                 <td colspan="2">

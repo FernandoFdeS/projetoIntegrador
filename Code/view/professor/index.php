@@ -16,7 +16,16 @@
             echo'
         <div class="col-12 card d-flex flex-row mb-3 justify-content-between">
             <div class="d-flex flex-column" id="'.$professor['id'].'">
-                <p class="m-0 display-6">'.$professor['nome'].'</p>
+                <p class="m-0 display-6">'.$professor['nome'].'
+                ';
+                if($professor['contrato']!=NULL){
+                    echo '<a href="'.$professor["contrato"].'" download="contrato-'.$professor['nome'].'">';
+                    echo '<img src="../../images/contrato-icon.png" width="30px">';
+                    echo '</a>';
+                }
+                echo'
+                </p>
+                
                 <p class="m-0 text-muted display-3 mb-2" style="font-size:14px">CPF: '.$professor['cpf'].'</p>
             </div>
             <!-- Div abaixo ficara visivel apenas para administradores -->
