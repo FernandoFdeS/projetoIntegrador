@@ -5,7 +5,7 @@
         header('Content-type: application/json'); 
         $id_professor=$_GET['id_professor'];
         
-        $sql=$db->prepare('SELECT ALUNO.nome as nome,AULA.id_horario as horario FROM
+        $sql=$db->prepare('SELECT ALUNO.id as id_aluno, ALUNO.nome as nome,AULA.id_horario as horario FROM
         AULA JOIN CURSO on AULA.id_curso = CURSO.id
         JOIN PROFESSOR on CURSO.id_professor = PROFESSOR.id
         JOIN ALUNO_AULA on ALUNO_AULA.id_aula = AULA.id

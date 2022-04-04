@@ -370,7 +370,7 @@
     const populaHorarios = (result)=>{
         //console.log(result)
         for(var x =0;x<result['length'];x++){
-            console.log(result[x]['id']);
+            //console.log(result[x]['id']);
             document.getElementById("horario-"+result[x]['id']).textContent = "-- Disponível --";
             document.getElementById("horario-"+result[x]['id']).style.backgroundColor  = "white";
         }
@@ -379,7 +379,7 @@
     const populaAulas = (result)=>{
         console.log(result)
         for(var x =0;x<result['length'];x++){
-            console.log(result[x]['id']);
+            //console.log(result[x]['id']);
             document.getElementById("horario-"+result[x]['horario']).textContent = result[x]['nome'];
             document.getElementById("horario-"+result[x]['horario']).style.backgroundColor  = "white";
         }
@@ -388,13 +388,20 @@
     const populaAlunos = (result)=>{
         console.log(result)
         for(var x =0;x<result['length'];x++){
-            console.log(result[x]['id']);
-            var p = document.createElement("p");
-            p.textContent +=result[x]['nome'];
-            p.classList.add("text-muted");
-            p.style.fontSize = "12px";
-            console.log(p)
-            document.getElementById("horario-"+result[x]['horario']).appendChild(p);           
+            //console.log(result[x]['id']);
+            var id = result[x]['id_aluno'];
+            var a = document.createElement("a");        
+            var link ="../aluno/musicas.php?id_aluno="+id;
+            var br = document.createElement("br");
+            a.href=link;              
+            console.log(link);
+            a.style.cursor="pointer";
+            a.textContent +=result[x]['nome'];
+            a.classList.add("text-muted");
+            a.style.fontSize = "12px";
+            //console.log(p)
+            document.getElementById("horario-"+result[x]['horario']).appendChild(br);           
+            document.getElementById("horario-"+result[x]['horario']).appendChild(a);           
                         
         }
     }

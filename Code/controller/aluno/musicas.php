@@ -1,8 +1,8 @@
 <?php    
-    if($_SESSION['acesso'] = 'aluno') {
+    if($_SESSION['Acesso'] == 'aluno') {
         $id = $_SESSION["id"];
     } else {
-        $id = $_GET["id"];
+        $id = $_GET["id_aluno"];
     }
         
     $sql = $db->prepare('SELECT * FROM aluno WHERE id = :id');
