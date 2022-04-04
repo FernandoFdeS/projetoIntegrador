@@ -81,7 +81,9 @@
                                 </td>
                                 <td colspan="1" class="text-center px-0">';
                                 if($musica['cifra']!=NULL){
+                                    echo '<a href="'.$musica["cifra"].'" download="'.$musica['nome'].'">';
                                     echo '<img src="../../images/cifra-icon.png" width="50px">';
+                                    echo '</a>';
                                 } else {
                                     echo '<img src="../../images/none-icon.png" width="50px">';
                                 }
@@ -97,7 +99,9 @@
                                 </td>
                                 <td colspan="1" class="text-center px-0">';
                                 if($musica['arquivo_musica']!=NULL){
-                                    echo '<img src="../../images/none-icon.png" width="50px">';
+                                    echo '<a href="'.$musica["arquivo_musica"].'" download="'.$musica['nome'].'">';
+                                    echo '<img src="../../images/file-icon.png" width="50px">';
+                                    echo '</a>';
                                 } else {
                                     echo '<img src="../../images/none-icon.png" width="50px">';
                                 }

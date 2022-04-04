@@ -31,7 +31,7 @@
 <div class="container">
     <div class="row mt-5">
         <h1 class="mt-1 display-3">Inserir Música</h1>
-        <form class="mt-5" action="../../controller/musica/cadastro.php" method="POST">
+        <form class="mt-5" action="../../controller/musica/cadastro.php"  method="post" enctype="multipart/form-data">
 
             <div class="row mt-3">
                 <div class="col-6">
@@ -54,14 +54,14 @@
                     <label for="cifra" id="btnCifra" class="btn-file">Escolha a cifra</label>
                     <input type="file" class="" id="cifra" placeholder="Insira a cifra:" name="cifra" onChange="changeCifraLabel()">                   
                 </div>
-
+                
                 <div class="col-6">
                     <label for="arquivo" class="d-flex justify-content-between">
                         <span>Arquivo:</span>
                         <span class="text-muted display-3" style="font-size:15px;">Opcional</span>
                     </label>                     
                     <label for="arquivo" id="btnFile" class="btn-file">Escolha o arquivo</label>
-                    <input type="file" class="" id="arquivo" placeholder="Insira o arquivo:" name="arquivo" onChange="changeArquivoLabel()">                   
+                    <input type="file"  id="arquivo" placeholder="Insira o arquivo:" name="arquivo" onChange="changeArquivoLabel()">                   
                 </div>
             </div>
           
@@ -76,7 +76,7 @@
 
                 <div class="col-6">
                     <label for="instrumento">Instrumento: </label>
-                    <select class="form-select" aria-label="Default select example" name="instrumento" id="instrumento" required>
+                    <select class="form-select" aria-label="Default select example" name="instrumento" id="instrumento">
                         <option value="" selected disabled>Selecione um instrumento</option>
                         <option value="1">Violão 🎸</option>
                         <option value="2">Voz 🎙️</option>

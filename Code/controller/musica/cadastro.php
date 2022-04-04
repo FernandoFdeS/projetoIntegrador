@@ -1,7 +1,7 @@
 <?php
     require '../../db/connection.php';
 
-
+   
     try {
         if(isset($_POST['titulo'])&&isset($_POST['artista'])&&isset($_POST['instrumento'])&&isset($_POST['status'])&&isset($_POST['idAluno'])){
             $titulo = $_POST['titulo'];
@@ -10,11 +10,36 @@
             $status = $_POST['status'];
             $idAluno = $_POST['idAluno'];
 
-            $cifraPath = NULL;  // não utilizados
-            $arqPath = NULL;    // ainda
-            
+            $cifraPath = NULL;
+            $arqPath = NULL;     
             $link = NULL;
             $anotacoes = NULL;
+
+            if($_FILES['cifra']){                
+                $fileName= $_FILES['cifra']['name'];
+                $fileExtension=explode('.',$fileName);
+                $realFileExtension=strtolower(end($fileExtension));               
+                $newFileName=uniqid('',true).".".$realFileExtension;
+                if($_FILES['cifra']['error']===0){
+                    $fileDestination = '../../storage/cifras/'.$newFileName;                    
+                    move_uploaded_file($_FILES['cifra']['tmp_name'],$fileDestination);
+                    $cifraPath=$fileDestination;
+                }               
+            }
+
+            if($_FILES['arquivo']){                
+                $fileName= $_FILES['arquivo']['name'];
+                $fileExtension=explode('.',$fileName);
+                $realFileExtension=strtolower(end($fileExtension));               
+                $newFileName=uniqid('',true).".".$realFileExtension;
+                if($_FILES['arquivo']['error']===0){
+                    $fileDestination = '../../storage/musicas/'.$newFileName;                    
+                    move_uploaded_file($_FILES['arquivo']['tmp_name'],$fileDestination);
+                    $arqPath=$fileDestination;
+                }               
+            }
+            
+          
             
             if(isset($_POST['link'])){
                 $link = $_POST['link'];
