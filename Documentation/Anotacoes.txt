@@ -1,7 +1,5 @@
 # Importante:
 
-Deixar os campos de file-input funcionais e salvar os seus arquivos em algum lugar aqui das pastas. # Fernando
-
 No botao de perfil levar para a pagina de edit do usuario logado. # Fernando
 
 Pagina de aula dos alunos. # Fernando
@@ -9,8 +7,6 @@ Pagina de aula dos alunos. # Fernando
 CRUD Adm. # Bordin
 
 Arrumar os instrumentos. # Bordin
-
-Botoes inteiros devem levar para as paginas, e nao apenas ao clicar no texto. # Fernando
 
 Na tabela de aulas, ao clicar no nome do aluno devera ser redirecionado ate a pagina de musicas do aluno. # Fernando
 
@@ -53,3 +49,6 @@ Concluído (mas falta revisar) --------------------------
 
     Mostrar nome dos alunos nas aulas na tabela de aula do professor
 
+    Deixar os campos de file-input funcionais e salvar os seus arquivos em algum lugar aqui das pastas.
+    
+    Botoes inteiros devem levar para as paginas, e nao apenas ao clicar no texto.
