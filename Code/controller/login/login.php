@@ -1,6 +1,7 @@
 <?php
     require '../db/connection.php';
-    if(isset($_SESSION)){
+    session_start();
+    if(isset($_SESSION['Acesso'])){
         if($_SESSION['Acesso']=='adm'){
             header('Location:adm/painel.php'); 
         }else if ($_SESSION['Acesso']=='aluno'){

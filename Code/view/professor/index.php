@@ -1,6 +1,7 @@
 <?php
     include '../../layouts/navbar.php';
     include '../../controller/professor/index.php';
+    include '../../controller/middleware/isAdm.php';
 ?>
     
 <div class="container">

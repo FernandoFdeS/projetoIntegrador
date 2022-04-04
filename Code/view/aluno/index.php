@@ -1,7 +1,7 @@
 <?php
     include '../../layouts/navbar.php';
     include '../../controller/aluno/index.php';
-    
+    include '../../controller/middleware/isAdm.php';
 ?>
     
 <div class="container">

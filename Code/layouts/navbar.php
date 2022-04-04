@@ -32,7 +32,7 @@
                     }
                     echo('
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#" id="nav-perfil">PERFIL</a>
+                            <a class="nav-link text-light" href="../../rotas/perfil.php" id="nav-perfil">PERFIL</a>
                         </li>          
                         <li class="nav-item" style="margin-right: 30px;">
                             <a class="nav-link text-light" href="#" id="nav-recitais">RECITAIS</a>

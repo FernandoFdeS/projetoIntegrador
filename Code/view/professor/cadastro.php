@@ -1,6 +1,7 @@
 <?php
     include '../../layouts/navbar.php';
     include '../../controller/professor/cadastro.php';
+    include '../../controller/middleware/isAdm.php';
 ?>
 <style>
       input[type="file"]{
