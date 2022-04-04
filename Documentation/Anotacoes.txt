@@ -8,8 +8,6 @@ CRUD Adm. # Bordin
 
 Arrumar os instrumentos. # Bordin
 
-Na tabela de aulas, ao clicar no nome do aluno devera ser redirecionado ate a pagina de musicas do aluno. # Fernando
-
 Excluir as aulas do aluno quando ele for deletado do banco. # Bordin
 
 Funcao de delete de aula. # Bordin
@@ -52,3 +50,5 @@ Concluído (mas falta revisar) --------------------------
     Deixar os campos de file-input funcionais e salvar os seus arquivos em algum lugar aqui das pastas.
     
     Botoes inteiros devem levar para as paginas, e nao apenas ao clicar no texto.
+
+    Na tabela de aulas, ao clicar no nome do aluno devera ser redirecionado ate a pagina de musicas do aluno
