@@ -1,9 +1,5 @@
 # Importante:
 
-No botao de perfil levar para a pagina de edit do usuario logado. # Fernando
-
-Pagina de aula dos alunos. # Fernando
-
 CRUD Adm. # Bordin
 
 Arrumar os instrumentos. # Bordin
@@ -52,3 +48,7 @@ Concluído (mas falta revisar) --------------------------
     Botoes inteiros devem levar para as paginas, e nao apenas ao clicar no texto.
 
     Na tabela de aulas, ao clicar no nome do aluno devera ser redirecionado ate a pagina de musicas do aluno
+
+    No botao de perfil levar para a pagina de edit do usuario logado.
+
+    Pagina de aula dos alunos

@@ -23,10 +23,10 @@
                         </li>                     
                         ');
                     }
-                    if($_SESSION['Acesso']=='professor'){
+                    if($_SESSION['Acesso']=='professor' || $_SESSION['Acesso']=='aluno'){
                         echo('
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="../professor/aulas.php" id="nav-aulas">AULAS</a>                                       
+                            <a class="nav-link text-light"  href="../../rotas/aulas.php" id="nav-aulas">AULAS</a>                                       
                         </li>
                         ');
                     }
