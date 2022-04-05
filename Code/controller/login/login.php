@@ -44,9 +44,10 @@
             }
             
             //Procurando na tabela de Alunos;
-            $sql=$db->prepare("SELECT * FROM aluno WHERE email=:email AND senha=:senha"); 
+                        
+            $sql=$db->prepare("SELECT * FROM aluno WHERE email=:email AND senha=:senha OR username=:email AND senha=:senha"); 
             $sql->bindParam(':email',$email);
-            $sql->bindParam(':senha',$senha);
+            $sql->bindParam(':senha',$senha);           
             $sql->execute();             
             $aluno=$sql->fetch();                
             if($aluno){
