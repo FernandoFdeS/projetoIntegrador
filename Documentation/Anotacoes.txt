@@ -1,8 +1,10 @@
 # Importante:
 
-Fazer o login aceitar username
+Fazer o login aceitar username.
 
-CRUD Adm. # Bordin
+Consertar os botões de voltar que ficaram brancos.
+
+Aceitar arquivos nas paginas de update.
 
 Arrumar os instrumentos. # Bordin
 
@@ -54,3 +56,5 @@ Concluído (mas falta revisar) --------------------------
     No botao de perfil levar para a pagina de edit do usuario logado.
 
     Pagina de aula dos alunos
+
+    CRUD Adm.
