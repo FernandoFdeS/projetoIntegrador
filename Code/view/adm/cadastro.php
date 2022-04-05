@@ -17,7 +17,7 @@
             <div class=" mt-5 mb-5">
                 <button type="submit" class="btn-principal">Cadastrar</button>
                 <span class="btn-secundario mx-1">
-                    <a href='index.php'>Voltar</a>
+                    <a href='index.php' style="text-decoration:none;color:#005790">Voltar</a>
                 </span>
                
             </div>
