@@ -4,8 +4,6 @@ Aceitar arquivos nas paginas de update.
 
 Arrumar os instrumentos. # Bordin
 
-Excluir as aulas do aluno quando ele for deletado do banco. # Bordin
-
 Colocar as middlewares nas paginas certas. # Qualquer um
 
 Mensagens Flash. # Qualquer um 
@@ -58,3 +56,5 @@ Concluído (mas falta revisar) --------------------------
     Fazer o login aceitar username.
 
     Consertar os botões de voltar que ficaram brancos.
+    
+Excluir as aulas do aluno quando ele for deletado do banco.
