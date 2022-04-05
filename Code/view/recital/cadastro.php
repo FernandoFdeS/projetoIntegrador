@@ -27,7 +27,7 @@
             <div class=" mt-5 mb-2">
                 <button type="submit" class="btn-principal">Cadastrar</button>
                 <span class="btn-secundario mx-1">
-                    <a >Voltar</a>
+                    <a style="text-decoration:none;color:#005790">Voltar</a>
                 </span>               
             </div>
         </form>

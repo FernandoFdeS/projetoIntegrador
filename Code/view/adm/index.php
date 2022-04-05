@@ -13,7 +13,7 @@
         <?php
             foreach($admins as $admin){
                 echo'     
-                    <div class="col-12 card d-flex flex-row justify-content-between">
+                    <div class="col-12 card d-flex flex-row mb-3 justify-content-between">
                         <div class="d-flex flex-column">
                             <p class="m-0 display-6">'.$admin['email'].'</p>
                         </div>

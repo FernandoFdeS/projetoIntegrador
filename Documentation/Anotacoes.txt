@@ -1,9 +1,5 @@
 # Importante:
 
-Fazer o login aceitar username.
-
-Consertar os botões de voltar que ficaram brancos.
-
 Aceitar arquivos nas paginas de update.
 
 Arrumar os instrumentos. # Bordin
@@ -58,3 +54,7 @@ Concluído (mas falta revisar) --------------------------
     CRUD Adm.
 
     Funcao de delete de aula.
+
+    Fazer o login aceitar username.
+
+    Consertar os botões de voltar que ficaram brancos.
