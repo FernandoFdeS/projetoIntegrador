@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row mt-5">
         <h1 class="mt-1 display-3">Cadastro de Administrador</h1>
-        <form class="mt-5" action="#" method="#">
+        <form class="mt-5" action="../../controller/adm/cadastro.php" method="POST">
             <div class="form-group mt-3">
                 <label for="email">Email: </label>
                 <input type="email" class="form-control" id="email" name="email" required placeholder="exemplo@email.com">
@@ -17,7 +17,7 @@
             <div class=" mt-5 mb-5">
                 <button type="submit" class="btn-principal">Cadastrar</button>
                 <span class="btn-secundario mx-1">
-                    <a >Voltar</a>
+                    <a href='index.php'>Voltar</a>
                 </span>
                
             </div>
