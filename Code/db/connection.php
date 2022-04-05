@@ -25,6 +25,8 @@ try {
     // "Conecta" com o banco de dados
     $db = new PDO("sqlite:$arquivo");
 
+    $db->exec('PRAGMA foreign_keys=on');
+
     if ($deve_inicializar_banco) {
         // Cria as tabelas no banco de dados para uso futuro
         $db->exec(
@@ -55,14 +57,14 @@ try {
                 id INTEGER PRIMARY KEY,
                 nome varchar(100) not null,
                 id_professor integer not null,
-                FOREIGN KEY (id) references professor(id_professor) ON DELETE CASCADE
+                FOREIGN KEY (id_professor) references professor(id) ON DELETE CASCADE
             );
             CREATE TABLE matricula(
                 id INTEGER PRIMARY KEY,
                 id_aluno integer not null,
                 id_curso integer not null,    
-                foreign key (id) references curso(id_curso) ON DELETE CASCADE,
-                foreign key (id) references aluno(id_aluno) ON DELETE CASCADE
+                foreign key (id_curso) references curso(id) ON DELETE CASCADE,
+                foreign key (id_aluno) references aluno(id) ON DELETE CASCADE
             );
             CREATE TABLE musica(
                 id INTEGER PRIMARY KEY,
@@ -75,7 +77,7 @@ try {
                 arquivo_musica varchar(150),
                 instrumento smallint not null,
                 id_aluno integer not null,
-                foreign key (id) references aluno(id_aluno) ON DELETE CASCADE
+                foreign key (id_aluno) references aluno(id) ON DELETE CASCADE
             );
             CREATE TABLE horario(
                 id INTEGER PRIMARY KEY,
@@ -87,24 +89,24 @@ try {
                 id INTEGER PRIMARY KEY,
                 id_horario integer not null,
                 id_professor integer not null,    
-                foreign key (id) references horario(id_horario) ON DELETE CASCADE,
-                foreign key (id) references professor(id_professor) ON DELETE CASCADE
+                foreign key (id_horario) references horario(id) ON DELETE CASCADE,
+                foreign key (id_professor) references professor(id) ON DELETE CASCADE
             );
 
             CREATE TABLE aula(
                 id INTEGER PRIMARY KEY,
                 id_curso integer not null,
                 id_horario integer not null, 
-                foreign key (id) references curso(id_curso) ON DELETE CASCADE,
-                foreign key (id) references horario(id_horario) ON DELETE CASCADE
+                foreign key (id_curso) references curso(id) ON DELETE CASCADE,
+                foreign key (id_horario) references horario(id) ON DELETE CASCADE
             );
 
             CREATE TABLE aluno_aula(
                 id INTEGER PRIMARY KEY,
                 id_aula integer not null,
                 id_aluno integer not null,
-                foreign key (id) references aluno(id_aluno) ON DELETE CASCADE,
-                foreign key (id) references aula(id_aula) ON DELETE CASCADE
+                foreign key (id_aluno) references aluno(id) ON DELETE CASCADE,
+                foreign key (id_aula) references aula(id) ON DELETE CASCADE
             );
             INSERT INTO administrador(senha,email) values ("senha","adm");
             INSERT INTO aluno(cpf,nome,username,data_nasc,senha,email) values ("00000000001","Aluno Teste","usernameAluno","2002-01-01","senha","aluno");
@@ -193,7 +195,7 @@ try {
             INSERT INTO horario(dia,periodo) values (5,"19:00-20:00");
             INSERT INTO horario(dia,periodo) values (5,"20:00-21:00");
             INSERT INTO horario(dia,periodo) values (5,"21:00-22:00")
-            
+
             '
         );  
     }
