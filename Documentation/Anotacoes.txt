@@ -10,8 +10,6 @@ Arrumar os instrumentos. # Bordin
 
 Excluir as aulas do aluno quando ele for deletado do banco. # Bordin
 
-Funcao de delete de aula. # Bordin
-
 Colocar as middlewares nas paginas certas. # Qualquer um
 
 Mensagens Flash. # Qualquer um 
@@ -58,3 +56,5 @@ Concluído (mas falta revisar) --------------------------
     Pagina de aula dos alunos
 
     CRUD Adm.
+
+    Funcao de delete de aula.
