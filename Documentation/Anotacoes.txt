@@ -1,5 +1,7 @@
 # Importante:
 
+Fazer o login aceitar username
+
 CRUD Adm. # Bordin
 
 Arrumar os instrumentos. # Bordin
