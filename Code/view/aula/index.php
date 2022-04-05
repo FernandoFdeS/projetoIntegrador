@@ -30,10 +30,7 @@
                         </div>
                         <!-- Div abaixo ficara visivel apenas para administradores -->
                         <div class="d-flex align-items-center">
-                            <button onclick="location.href=\'edit.php?id='.$aula['id'].'\';" class="btn-editar mx-2">
-                                <img src="../../images/edit-icon.png" width=40px>
-                            </button>
-                            <button class="btn-remover">
+                            <button onclick="location.href=\'../../controller/aula/delete.php?id='.$aula['id'].'\';" class="btn-remover">
                                 <img src="../../images/delete-icon.png" width=40px>
                             </button>
                         </div>
