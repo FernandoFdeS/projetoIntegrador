@@ -47,19 +47,19 @@
                     <p class="m-0 display-6" style="font-size:1.8em">Aulas</p>
                 </div>            
             </div>    
-            <div class="col-3 card-painel d-flex flex-row justify-content-between mt-4"  onclick="location.href='../matricula/index.php'">
+            <div class="col-3 card-painel d-flex flex-row justify-content-between mt-4 mb-4"  onclick="location.href='../matricula/index.php'">
                 <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow">
                     <img src="../../images/matriculas-icon.png" width=75px>
                     <p class="m-0 display-6" style="font-size:1.8em" >Matriculas</p>
                 </div>            
             </div>              
-            <div class="col-3 card-painel d-flex flex-row justify-content-between mt-4">
+            <div class="col-3 card-painel d-flex flex-row justify-content-between mt-4 mb-4">
                 <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow" onclick="funcaoIndisponivel()">
                     <img src="../../images/pagamentos-icon.png" width=75px>
                     <p class="m-0 display-6" style="font-size:1.8em">Pagamentos</p>
                 </div>            
             </div>             
-            <div class="col-3 card-painel d-flex flex-row justify-content-between mt-4" onclick="location.href='../adm/index.php'">
+            <div class="col-3 card-painel d-flex flex-row justify-content-between mt-4 mb-4" onclick="location.href='../adm/index.php'">
                 <div class="d-flex flex-column align-items-center  justify-content-center  col-12 shadow">
                     <img src="../../images/adm-icon.png" width=75px>
                     <p class="m-0 display-6" style="font-size:1.8em">Administradores</p>

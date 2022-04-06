@@ -5,7 +5,7 @@
 
 <div class="container">
     <div class="row mt-5">
-        <h1 class="mt-1 display-3">Cadastro de Administrador</h1>
+        <h1 class="mt-1 display-3">Atualizar Administrador</h1>
         <form class="mt-5" action="../../controller/adm/update.php" method="POST">
             <?php
 
