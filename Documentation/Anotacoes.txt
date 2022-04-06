@@ -14,9 +14,11 @@ e importar o footer no final das paginas que vao ter mensagens.
 
 Colocar o (WHERE professor_horario.disponivel = 1) no SELECT do getHorarioJson e no getHorariosByCursoJson.php
 
-ordenar view/aluno/musicas por progresso
-
 Criar read.me
+
+arrumar botões de gerenciar horário e adicionar horário da tabela de aulas do professor (só o texto é clicavel)
+
+checar se todos botões de voltar tão com href
 
 Concluído (mas falta revisar) --------------------------
 
