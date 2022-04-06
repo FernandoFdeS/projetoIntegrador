@@ -2,8 +2,6 @@
 
 Aceitar arquivos nas paginas de update.
 
-Arrumar os instrumentos. # Bordin
-
 Colocar as middlewares nas paginas certas. # Qualquer um
 
 Mensagens Flash. # Qualquer um 
@@ -15,6 +13,8 @@ Colocar as mensagens de "criado com sucesso" e etc na $_SESSION['flash-msg'] nas
 e importar o footer no final das paginas que vao ter mensagens.
 
 Colocar o (WHERE professor_horario.disponivel = 1) no SELECT do getHorarioJson e no getHorariosByCursoJson.php
+
+ordenar view/aluno/musicas por progresso
 
 Criar read.me
 
@@ -59,4 +59,6 @@ Concluído (mas falta revisar) --------------------------
 
     Consertar os botões de voltar que ficaram brancos.
     
-Excluir as aulas do aluno quando ele for deletado do banco.
+    Excluir as aulas do aluno quando ele for deletado do banco.
+
+    Arrumar os instrumentos. 
