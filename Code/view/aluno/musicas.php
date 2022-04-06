@@ -110,13 +110,28 @@
                                 <td colspan="1" class="text-center px-0">';
                                 switch($musica['instrumento']){
                                     case 1:
-                                        echo '<img src="https://revistatrip.uol.com.br/_lib/common/imgCrop.php?params=chimbinha01.jpg_._620_._460" width="50px">';
+                                        echo '<img src="../../images/violao-icon.png" width="50px">';
                                         break;
                                     case 2:
-                                        echo '<img src="https://media.istockphoto.com/photos/man-singing-song-with-microphone-picture-id529494379" width="50px">';
+                                        echo '<img src="../../images/microfone-icon.png" width="50px">';
                                         break;
                                     case 3:
-                                        echo '<img src="https://cdn.w600.comps.canstockphoto.com.br/piano-m%C3%A3os-tocando-teclado-fotografia-de-stock_csp64180596.jpg" width="50px">';
+                                        echo '<img src="../../images/teclado-icon.png" width="70px">';
+                                        break;    
+                                    case 4:
+                                        echo '<img src="../../images/guitarra-icon.png" width="50px">';
+                                        break;      
+                                    case 5:
+                                        echo '<img src="../../images/bateria-icon.jpg" width="50px">';
+                                        break;  
+                                    case 6:
+                                        echo '<img src="../../images/baixo-icon.png" width="50px">';
+                                        break;      
+                                    case 7:
+                                        echo '<img src="../../images/violino-icon.png" width="50px">';
+                                        break;   
+                                    case 8:
+                                        echo '<img src="../../images/outro-icon.png" width="50px">';
                                         break;    
                                 }
                             echo '
