@@ -368,7 +368,7 @@
     
 
     window.onload = function() {  
-        fetch('../../controller/aluno/getAulasJson.php?id_aluno=<?php echo($_SESSION['id']) ?>')
+        fetch('../../controller/aluno/getAulasJson.php?id_aluno=<?php echo($_SESSION['id'])?>')
             .then(response=>{response.json()
                 .then(data => populaAulas(data))
             }).catch(e => console.log('Deu Erro '+e.message));        

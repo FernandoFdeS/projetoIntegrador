@@ -5,13 +5,11 @@
         header('Content-type: application/json'); 
         $id_aluno=$_GET['id_aluno'];
         
-        $sql=$db->prepare('SELECT curso.nome as nome,aula.id_horario as horario FROM ALUNO
-        JOIN ALUNO_AULA on ALUNO_AULA.id_aula = ALUNO.id
-        JOIN AULA on AULA.id = ALUNO_AULA.id_aula 
-        JOIN CURSO on  AULA.id_curso = CURSO.id         
-        WHERE ALUNO.id = :id_aluno');
+        $sql=$db->prepare('SELECT curso.nome as nome, aula.id_horario as horario from aluno
+        join aluno_aula on aluno_aula.id_aluno = aluno.id
+        join aula on aula.id=aluno_aula.id_aula
+        join curso on aula.id_curso = curso.id where aluno.id=:id_aluno');
         $sql->bindParam(':id_aluno',$id_aluno);
-
         $sql->execute();
         
         $aulas=$sql->fetchAll(PDO::FETCH_ASSOC);

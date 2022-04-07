@@ -58,6 +58,8 @@
                 header('Location:aluno/musicas.php');                    
             }
             
+            $_SESSION['flash-msg']="Login e/ou senha incorreto(s)";
+            $_SESSION['flash-bg']="danger";
                 
         }
     } catch (PDOException $e) {
