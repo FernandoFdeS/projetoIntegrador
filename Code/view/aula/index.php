@@ -44,4 +44,5 @@
        
     document.getElementById("nav-painel").classList.add("active");
 
-</script>
+</script><?php include '../../layouts/footer.php'; ?>
+<?php include '../../layouts/footer.php'; ?>

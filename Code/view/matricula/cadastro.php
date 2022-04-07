@@ -29,7 +29,7 @@
                 </select>
             </div>
             <div class="form-group mt-2">
-                <label class="form-check-label" for="data">Data: </label>
+                <label class="form-check-label" for="data">Data da matricula: </label>
                 <input type="date" class="form-control" id="data" name="data">                
             </div>
             <div class=" mt-5 mb-3">

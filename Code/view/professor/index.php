@@ -50,3 +50,5 @@
     document.getElementById("nav-perfil").classList.remove("active");
     document.getElementById("nav-recitais").classList.remove("active");
 </script>
+
+<?php include '../../layouts/footer.php'; ?>

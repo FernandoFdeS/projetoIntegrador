@@ -38,6 +38,9 @@
             //$sql1->bindParam(':nome',$nome);
             //$sql1->bindParam(':id_professor',$id_professor);            
             //$sql1->execute();
+
+            $_SESSION['flash-msg']="Aula cadastrada com sucesso";
+            $_SESSION['flash-bg']="success";
             header('Location:index.php');
         }
 

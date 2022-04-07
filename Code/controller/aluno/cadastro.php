@@ -47,6 +47,10 @@
             $comando->bindParam(':dataNasc',$dataFormatada);
             $comando->bindParam(':responsavel',$responsavel);
             $comando->execute();
+
+            $_SESSION['flash-msg']="Aluno cadastrado com sucesso";
+            $_SESSION['flash-bg']="success";
+
             header('Location:index.php');
         }
 

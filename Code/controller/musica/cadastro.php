@@ -60,7 +60,10 @@
             $sql->bindParam(':link',$link);
             $sql->bindParam(':arquivo_musica',$arqPath);
             $sql->bindParam(':instrumento',$instrumento);
-            echo"foi";
+            
+            $_SESSION['flash-msg']="Música cadastrada com sucesso";
+            $_SESSION['flash-bg']="success";
+
             $sql->execute();
         }
 

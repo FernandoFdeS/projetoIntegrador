@@ -31,6 +31,10 @@
             $sql->bindParam(':email',$email);
             $sql->bindParam(':contrato',$contrato);
             $sql->execute();
+
+            $_SESSION['flash-msg']="Professor cadastrado com sucesso";
+            $_SESSION['flash-bg']="success";
+
             header('Location:index.php');
         }
 

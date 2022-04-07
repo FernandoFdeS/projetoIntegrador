@@ -19,6 +19,9 @@
             $sql1->bindParam(':id_aluno',$id_aluno);
             $sql1->bindParam(':id_curso',$id_curso);            
             $sql1->execute();
+
+            $_SESSION['flash-msg']="Aluno matriculado com sucesso";
+            $_SESSION['flash-bg']="success";
             header('Location:index.php');
         }
 
