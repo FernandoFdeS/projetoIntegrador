@@ -60,11 +60,11 @@
             $sql->bindParam(':link',$link);
             $sql->bindParam(':arquivo_musica',$arqPath);
             $sql->bindParam(':instrumento',$instrumento);
-            
+            echo"foi";
             $sql->execute();
         }
 
-        header('Location:../../view/aluno/musicas.php');
+        header('Location:../../view/aluno/musicas.php?id_aluno='.$_POST['idAluno']);
 
     } catch (PDOException $e) {
         echo 'Erro ao executar comando no banco de dados: ' . $e->getMessage();

@@ -76,14 +76,14 @@
                 $sql->execute();
             }
 
-            header('Location:../../view/aluno/musicas.php?id='.$_GET['idAluno']);
+            header('Location:../../view/aluno/musicas.php?id_aluno='.$_POST['idAluno']);
 
         } catch (PDOException $e) {
             echo 'Erro ao executar comando no banco de dados: ' . $e->getMessage();
             exit();
         }
     } else {
-        header('Location:../../view/aluno/musicas.php?id='.$_GET['idAluno']);
+        header('Location:../../view/aluno/musicas.php?id_aluno='.$_POST['idAluno']);
     }
 
 ?>
