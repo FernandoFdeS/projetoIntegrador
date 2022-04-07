@@ -11,8 +11,42 @@
                 $status = $_POST['status'];
                 $idAluno = $_POST['idAluno'];
 
-                $cifraPath = NULL;  // não utilizados
-                $arqPath = NULL;    // ainda
+                $cifraPath = NULL;  
+                $arqPath = NULL;
+
+                if(isset($_POST['cifra'])){
+                    $cifraPath=$_POST['cifra'];
+                }
+
+                if(isset($_POST['arquivo_musica'])){
+                    $arqPath=$_POST['arquivo_musica'];
+                }
+                
+                if($_FILES['cifra']){                
+                    $fileName= $_FILES['cifra']['name'];
+                    $fileExtension=explode('.',$fileName);
+                    $realFileExtension=strtolower(end($fileExtension));               
+                    $newFileName=uniqid('',true).".".$realFileExtension;
+                    if($_FILES['cifra']['error']===0){
+                        unlink($cifraPath);
+                        $fileDestination = '../../storage/cifras/'.$newFileName;                    
+                        move_uploaded_file($_FILES['cifra']['tmp_name'],$fileDestination);
+                        $cifraPath=$fileDestination;
+                    }               
+                }
+    
+                if($_FILES['arquivo']){                
+                    $fileName= $_FILES['arquivo']['name'];
+                    $fileExtension=explode('.',$fileName);
+                    $realFileExtension=strtolower(end($fileExtension));               
+                    $newFileName=uniqid('',true).".".$realFileExtension;
+                    if($_FILES['arquivo']['error']===0){
+                        unlink($arqPath);
+                        $fileDestination = '../../storage/musicas/'.$newFileName;                    
+                        move_uploaded_file($_FILES['arquivo']['tmp_name'],$fileDestination);
+                        $arqPath=$fileDestination;
+                    }               
+                }
                 
                 $link = NULL;
                 $anotacoes = NULL;

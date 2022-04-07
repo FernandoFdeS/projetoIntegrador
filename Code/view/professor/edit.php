@@ -27,7 +27,7 @@
 <div class="container">
     <div class="row mt-5">
         <h1 class="mt-1 display-3">Atualizar Professor</h1>
-        <form class="mt-5" action="../../controller/professor/update.php" method="POST">
+        <form class="mt-5" action="../../controller/professor/update.php" method="POST" method="post" enctype="multipart/form-data" >
             <?php
                 echo '
                 <div class="form-group mt-3">
@@ -74,6 +74,9 @@
                 
                 <!-- id -->
                 <input type="hidden" class="form-control" id="id" name="id" value="'.$professor['id'].'">
+
+                <!-- contrato -->
+                <input type="hidden" class="form-control" id="contrato" name="contrato" value="'.$professor['contrato'].'">
 
                 <div class=" mt-5 mb-5">
                     <button type="submit" class="btn-principal">Salvar</button>

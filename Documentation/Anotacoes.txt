@@ -1,6 +1,5 @@
 # Importante:
 
-Aceitar arquivos nas paginas de update.
 
 Colocar as middlewares nas paginas certas. # Qualquer um
 
@@ -64,3 +63,5 @@ Concluído (mas falta revisar) --------------------------
     Excluir as aulas do aluno quando ele for deletado do banco.
 
     Arrumar os instrumentos. 
+
+    Aceitar arquivos nas paginas de update.

@@ -28,8 +28,8 @@
 
 <div class="container">
     <div class="row mt-5">
-        <h1 class="mt-1 display-3">Inserir Música</h1>
-        <form class="mt-5" action="../../controller/musica/update.php" method="POST">
+        <h1 class="mt-1 display-3">Editar Música</h1>
+        <form class="mt-5" action="../../controller/musica/update.php" method="post" enctype="multipart/form-data">
             <?php
                 echo '
                 <div class="row mt-3">
@@ -109,6 +109,8 @@
 
                 <input type="hidden" id="idAluno" name="idAluno" value="'.$_GET['idAluno'].'">
                 <input type="hidden" id="idMusica" name="idMusica" value="'.$_GET['idMusica'].'">
+                <input type="hidden" id="cifra" name="cifra" value="'.$musica['cifra'].'">
+                <input type="hidden" id="arquivo_musica" name="arquivo_musica" value="'.$musica['arquivo_musica'].'">
 
                 <div class="mt-5 mb-5">
                     <button type="submit" class="btn-principal">Salvar</button>
