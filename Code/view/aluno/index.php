@@ -15,7 +15,7 @@
             foreach($alunos as $aluno){
                 echo'           
                     <div class="col-12 card d-flex flex-row mb-3 justify-content-between">
-                        <div class="d-flex flex-column">
+                        <div class="d-flex flex-column"  onclick="location.href=\'../../view/aluno/musicas.php?id_aluno='.$aluno['id'].'\';" style="cursor:pointer">
                             <p class="m-0 display-6">'.$aluno['nome'].'                           
                             
                             </p>
