@@ -1,5 +1,6 @@
 <?php
     include '../../layouts/navbar.php';
+    include '../../controller/middleware/isAdmOrProfessor.php';
 ?>
 <style>
     .indisponivel{
