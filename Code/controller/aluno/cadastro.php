@@ -52,8 +52,9 @@
 
     } catch (PDOException $e) {
         if ($e->getCode()==23000){
-            echo '<p>Falha no cadastro: Este e-mail já existe!</p>';
-            echo '<a href="../../view/aluno/index.php" style="text-decoration:none;color:#005790">Voltar</a>';
+            $_SESSION['flash-msg'] = "Falha no cadastro: Este e-mail já existe!";
+            $_SESSION['flash-bg'] = "danger";
+            header('Location:../../view/aluno/index.php');
         } else {
             echo 'Erro ao executar comando no banco de dados: ' . $e->getMessage();
         }

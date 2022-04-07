@@ -38,6 +38,7 @@
     
     </div>
 </div>
+<?php include '../../layouts/footer.php'; ?>
 <script>
        
        document.getElementById("nav-painel").classList.add("active");
