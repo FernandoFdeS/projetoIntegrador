@@ -1,16 +1,3 @@
-# Importante:
-
-
-Colocar as middlewares nas paginas certas. # Qualquer um
-
-Mensagens Flash. # Qualquer um 
-
-# So frescura |
-              v
-
-Colocar as mensagens de "criado com sucesso" e etc na $_SESSION['flash-msg'] nas controllers (e as cores de fundo, ex: $_SESSION['flash-bg']="success")
-e importar o footer no final das paginas que vao ter mensagens.
-
 Colocar o (WHERE professor_horario.disponivel = 1) no SELECT do getHorarioJson e no getHorariosByCursoJson.php
 
 Criar read.me
@@ -19,7 +6,7 @@ arrumar botões de gerenciar horário e adicionar horário da tabela de aulas do
 
 checar se todos botões de voltar tão com href
 
-Concluído (mas falta revisar) --------------------------
+Concluídos --------------------------
 
     Criar as funcoes responsaveis por fazer o update das musicas quando o status ou as anotacoes forem alterados
 
